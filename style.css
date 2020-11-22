@@ -1,0 +1,21 @@
+.header {
+}
+
+.footer {
+  padding: 53px 40px 40px;
+  background-color: #191715;
+  color: #fff;
+}
+.footer small {
+}
+/* ------------------------- parallax */
+.parallax {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+.background {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
