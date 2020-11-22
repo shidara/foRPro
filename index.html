@@ -1,10 +1,12 @@
 <html lang="ja">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <script src="parlx.js"></script>
+    <script src="index.js"></script>
     <title>foRPro</title>
   </head>
   <body>
@@ -14,14 +16,42 @@
       <div class="header__logo">
         <a href="#dummy"
           ><h1>
-            <span>forPro</span><img src="#dummy" alt="forProのロゴ画像" /></h1
-        ></a>
+            <img
+              src="./images/logo.png"
+              alt="forProのロゴ画像"
+              width="100"
+              height="24"
+            />
+            <span class="hidden">forPro</span>
+          </h1></a
+        >
       </div>
-      <nav style="display: none">
-        <ul>
-          <li></li>
-        </ul>
-      </nav>
+      <div class="navigation">
+        <button id="navigation__button" class="navigation__button icon">
+          <span class="hidden">メニューを開く</span>
+        </button>
+
+        <nav class="navigation__menu">
+          <ul>
+            <li><a href="#dummy">プロの皆様へ</a></li>
+            <li><a href="#dummy">foRProの魅力</a></li>
+            <li><a href="#dummy">案件事例</a></li>
+            <li><a href="#dummy">ご利用フロー</a></li>
+          </ul>
+
+          <div class="applicationForm">
+            <a
+              href="#dimmy"
+              class="applicationForm__button applicationForm__web"
+              >Web</a
+            ><a
+              href="#dimmy"
+              class="applicationForm__button applicationForm__line applicationForm__line--border"
+              >LINE</a
+            >
+          </div>
+        </nav>
+      </div>
     </header>
 
     <!-- section1 -->
@@ -29,7 +59,15 @@
       <div class="background" style="background-image: url(sample.png)">
         <h2>プロの仕事に<span>正当な</span>報酬を</h2>
         <p>60秒で簡単登録</p>
-        <div><a href="#dimmy">Web</a><a href="#dimmy">LINE</a></div>
+        <div class="applicationForm">
+          <a href="#dimmy" class="applicationForm__button applicationForm__web"
+            >Web</a
+          ><a
+            href="#dimmy"
+            class="applicationForm__button applicationForm__line"
+            >LINE</a
+          >
+        </div>
       </div>
     </section>
 
@@ -141,7 +179,7 @@
             alt="forProのロゴ画像"
             width="67"
             height="16"
-          /><span>forPro公式ページ</span></a
+          /><span class="hidden">forPro公式ページ</span></a
         >
       </p>
 
