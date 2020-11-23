@@ -203,7 +203,7 @@ a {
 
 #section1 .background {
   height: 100%;
-  background-position: top 22px right 31%;
+  background-position: right 31% bottom 0;
 }
 
 .section1 .section1__form {
