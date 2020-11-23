@@ -1,6 +1,3 @@
-<script>
-
-$('.parallax').Parlx({
-  item: '.background'
+$(".parallax").Parlx({
+  item: ".background",
 });
-</script>

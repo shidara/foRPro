@@ -1,0 +1,286 @@
+/* reset */
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%; /*disabling user zoom*/
+  color: #00011d;
+}
+
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea {
+  touch-action: manipulation;
+}
+
+ul,
+ul li,
+ol li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* util系 */
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* スクリーンリーダー用不可視テキスト */
+.hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  user-select: none;
+  pointer-events: none;
+}
+
+/** body navigation表示している際のスクロール不可style **/
+.body.body--preventScroll {
+  position: fixed;
+  overflow: hidden;
+  overscroll-behavior: none;
+  width: 100%;
+  height: 100%;
+}
+
+/* Header */
+.header {
+  z-index: 10;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 18px 16px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+/* ナビゲ−ション */
+/* ナビゲ−ション - Headerのボタン類など */
+.header__navigationButton {
+  border: 0;
+  background-color: #fff;
+  background-image: url("../images/Icon/Menu.svg");
+}
+
+.header__navigationButton.header__navigationButton--close {
+  background-image: url("../images/Icon/Delete.svg");
+}
+
+/* ナビゲ−ション - コンテンツ */
+.navigation {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 21% 0;
+}
+
+.navigation.navigation--show {
+  display: block;
+}
+
+.navigation .navigation__list {
+  padding-left: 48px;
+}
+
+.navigation .navigation__listItem {
+  position: relative;
+  line-height: 1;
+}
+.navigation .navigation__listItem:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -32px;
+  height: 1px;
+  width: 16px;
+  background-color: #685b4d;
+}
+
+.navigation .navigation__listItem a {
+  display: block;
+  color: #00011d;
+  font-size: 24px;
+  padding: 16px 0;
+}
+
+.navigation .applicationForm.applicationForm--navigation {
+  margin-top: 64px;
+}
+
+/** webとLINEの遷移ボタン **/
+.applicationForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.applicationForm .applicationForm__catchCopy {
+  width: 310px;
+  color: #685b4d;
+}
+
+.applicationForm .applicationForm__contents {
+  display: flex;
+  justify-content: center;
+}
+
+.applicationForm .applicationForm__button {
+  width: 151px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.applicationForm .applicationForm__button:not(:first-child) {
+  margin-left: 8px;
+}
+
+.applicationForm .applicationForm__web {
+  color: #fff;
+  background-color: #685b4d;
+}
+
+.applicationForm .applicationForm__line {
+  color: #685b4d;
+  background-color: #fff;
+}
+
+.applicationForm .applicationForm__line.applicationForm__line--border {
+  border: 2px solid #685b4d;
+}
+
+/** 共通タイトルまわり **/
+.title {
+  color: #685b4d;
+  width: 100%;
+  text-align: center;
+  margin: 40px 0 56px;
+}
+.title__text {
+  position: relative;
+}
+
+.title__text::after {
+  content: "";
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  height: 1px;
+  width: 40px;
+  transform: translateX(-50%);
+  background-color: #685b4d;
+}
+
+/* section1 */
+#section1 {
+  position: relative;
+  height: calc(100% - 60px); /** 画面高さからヘッダー分の高さを引いています */
+  max-height: 618px;
+}
+
+#section1 .background {
+  height: 100%;
+  background-position: top 22px right 31%;
+}
+
+.section1 .section1__form {
+  position: absolute;
+  left: 0;
+  bottom: 20%;
+  width: 100%;
+}
+
+#section1 .catchCopy {
+  position: absolute;
+  top: 14%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+#section1 .catchCopy__text {
+  display: block;
+  width: 310px;
+  color: #685b4d;
+}
+
+#section1 .catchCopy .catchCopy__underline {
+  position: relative;
+}
+
+#section1 .catchCopy .catchCopy__underline:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #685b4d;
+}
+
+/* section2 */
+#section2 {
+  height: 262px;
+}
+
+#section2 .background {
+  background-color: #e7e4e1;
+  height: 100%;
+}
+
+#section2 .section2__rorle {
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  padding: 53px 40px 40px;
+  background-color: #191715;
+  color: #fff;
+}
+.footer a {
+  color: #fff;
+}
+.footer small a {
+  font-size: 12px;
+  color: #8a8988;
+}
+
+/* ------------------------- parallax */
+.parallax {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+.background {
+  position: absolute;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
