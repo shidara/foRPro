@@ -26,7 +26,7 @@
       <div class="header__navigation">
         <button
           id="header__navigationButton"
-          class="header__navigationButton icon"
+          class="header__navigationButton icon icon--menu"
         >
           <span class="hidden">メニューを開く</span>
         </button>
@@ -102,36 +102,52 @@
       <div class="background" style="background-image: url(sample.png)">
         <h2 class="title"><span class="title__text">プロの皆様へ</span></h2>
 
-        <div>
+        <div class="section3__question">
           <ul>
-            <li>その報酬、スキルに見合ってますか？</li>
-            <li>支払いが遅いと感じませんか？</li>
-            <li>マージンが多いと思いませんか？</li>
+            <li>
+              <i class="icon icon--checkBox_On"></i
+              >その報酬、スキルに見合ってますか？
+            </li>
+            <li>
+              <i class="icon icon--checkBox_On"></i>支払いが遅いと感じませんか？
+            </li>
+            <li>
+              <i class="icon icon--checkBox_On"></i
+              >マージンが多いと思いませんか？
+            </li>
           </ul>
         </div>
-        <div><img src="#dummy" alt="xxの画像" /></div>
+        <div class="section3__teamImage">
+          <img src="./images/section3.jpg" alt="xxの画像" />
+        </div>
       </div>
     </section>
 
     <!-- section4 -->
     <section id="section4" class="parallax">
       <div class="background" style="background-image: url(sample.png)">
-        <h2>foRProの魅力</h2>
-        　
-        <div>
-          <h3>高単価プロジェクト多数</h3>
+        <h2 class="title"><span class="title__text">foRProの魅力</span></h2>
+
+        <div class="section4__card">
+          <h3 class="title title--level3">
+            <span class="title__text">高単価プロジェクト多数</span>
+          </h3>
           <!-- グラフ -->
           <div>graph</div>
         </div>
 
-        <div>
-          <h3>業界最高水準 マージン10％</h3>
+        <div class="section4__card">
+          <h3 class="title title--level3">
+            <span class="title__text">業界最高水準 マージン10％</span>
+          </h3>
           <!-- 画像2枚 -->
           <div>画像2枚</div>
         </div>
 
-        <div>
-          <h3>支払いサイト0日</h3>
+        <div class="section4__card">
+          <h3 class="title title--level3">
+            <span class="title__text">支払いサイト0日</span>
+          </h3>
           <!-- 画像1枚 -->
           <div>画像1枚</div>
           <p>当月締め当月払い</p>
@@ -142,7 +158,7 @@
     <!-- section5 -->
     <section id="section5" class="parallax">
       <div class="background" style="background-image: url(sample.png)">
-        <h2>プロジェクト事例</h2>
+        <h2 class="title"><span class="title__text">プロジェクト事例</span></h2>
         <!-- カルーセルのやつ -->
         　
       </div>
@@ -151,7 +167,7 @@
     <!-- section6 -->
     <section id="section6" class="parallax">
       <div class="background" style="background-image: url(sample.png)">
-        <h2>ご利用フロー</h2>
+        <h2 class="title"><span class="title__text">ご利用フロー</span></h2>
         <div>
           <ul>
             <ol>
@@ -177,10 +193,26 @@
 
     <!-- section7 -->
     <section id="section7" class="parallax">
-      <div class="background" style="background-image: url(sample.png)">
-        <h2>60秒で簡単登録</h2>
-        <div><a href="#dummy">Web</a><a href="#dummy">:INE</a></div>
-        　
+      <div
+        class="background"
+        style="background-image: url(./images/section7.jpg)"
+      >
+        <h2 class="title title--whtie">
+          <span class="title__text">60秒で簡単登録</span>
+        </h2>
+        <div class="applicationForm">
+          <div class="applicationForm__contents">
+            <a
+              href="#dimmy"
+              class="applicationForm__button applicationForm__web"
+              >Web</a
+            ><a
+              href="#dimmy"
+              class="applicationForm__button applicationForm__line"
+              >LINE</a
+            >
+          </div>
+        </div>
       </div>
     </section>
 
@@ -188,7 +220,7 @@
       <p>
         <a href="#dummy"
           ><img
-            src="dummy"
+            src="./images/logo.png"
             alt="forProのロゴ画像"
             width="67"
             height="16"

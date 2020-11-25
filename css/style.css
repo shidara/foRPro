@@ -31,8 +31,31 @@ a {
 
 /* util系 */
 .icon {
+  display: inline-block;
   width: 24px;
   height: 24px;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+/* アイコン */
+.icon--back {
+  background-image: url("../images/Icon/Back.svg");
+}
+.icon--checkBox_On {
+  background-image: url("../images/Icon/CheckBox_On.svg");
+}
+
+.icon--checkBox_Off {
+  background-image: url("../images/Icon/CheckBox_Off.svg");
+}
+
+.icon--menu {
+  background-image: url("../images/Icon/Menu.svg");
+}
+
+.icon--delete {
+  background-image: url("../images/Icon/Delete.svg");
 }
 
 /* スクリーンリーダー用不可視テキスト */
@@ -77,11 +100,6 @@ a {
 .header__navigationButton {
   border: 0;
   background-color: #fff;
-  background-image: url("../images/Icon/Menu.svg");
-}
-
-.header__navigationButton.header__navigationButton--close {
-  background-image: url("../images/Icon/Delete.svg");
 }
 
 /* ナビゲ−ション - コンテンツ */
@@ -178,7 +196,21 @@ a {
   width: 100%;
   text-align: center;
   margin: 40px 0 56px;
+  font-weight: normal;
 }
+
+.title.title--whtie {
+  color: #fff;
+}
+
+.title.title--level3 {
+  font-weight: normal;
+  text-align: left;
+  color: #00011d;
+  font-size: 20px;
+  margin: 8px 0 24px;
+}
+
 .title__text {
   position: relative;
 }
@@ -192,6 +224,15 @@ a {
   width: 40px;
   transform: translateX(-50%);
   background-color: #685b4d;
+}
+
+.title.title--whtie .title__text::after {
+  background-color: #fff;
+}
+
+.title.title--level3 .title__text::after {
+  left: 0;
+  transform: translateX(0);
 }
 
 /* section1 */
@@ -256,6 +297,56 @@ a {
 
 #section2 .section2__rorle {
   text-align: center;
+}
+
+/* section3 */
+#section3 .icon {
+  margin-right: 8px;
+}
+
+#section3 .section3__question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+#section3 .section3__question li {
+  margin-bottom: 8px;
+}
+
+#section3 .section3__teamImage {
+  margin: 0 8px 73px;
+}
+
+#section3 .section3__teamImage img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+/* section4 */
+#section4 {
+  height: 1149px;
+}
+#section4 .background {
+  background-color: #e7e4e1;
+}
+
+#section4 .section4__card {
+  margin: 0 8px 16px;
+  padding: 16px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+/* section7 */
+#section7 {
+  height: auto;
+  min-height: 235px;
+}
+#section7 .applicationForm {
+  margin-bottom: 64px;
 }
 
 /* Footer */
