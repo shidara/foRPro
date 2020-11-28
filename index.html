@@ -128,7 +128,7 @@
       <div class="background" style="background-image: url(sample.png)">
         <h2 class="title"><span class="title__text">foRProの魅力</span></h2>
 
-        <div class="section4__card">
+        <div class="card">
           <h3 class="title title--level3">
             <span class="title__text">高単価プロジェクト多数</span>
           </h3>
@@ -136,7 +136,7 @@
           <div>graph</div>
         </div>
 
-        <div class="section4__card">
+        <div class="card">
           <h3 class="title title--level3">
             <span class="title__text">業界最高水準 マージン10％</span>
           </h3>
@@ -144,7 +144,7 @@
           <div>画像2枚</div>
         </div>
 
-        <div class="section4__card">
+        <div class="card">
           <h3 class="title title--level3">
             <span class="title__text">支払いサイト0日</span>
           </h3>
@@ -160,7 +160,6 @@
       <div class="background" style="background-image: url(sample.png)">
         <h2 class="title"><span class="title__text">プロジェクト事例</span></h2>
         <!-- カルーセルのやつ -->
-        　
       </div>
     </section>
 
@@ -168,26 +167,51 @@
     <section id="section6" class="parallax">
       <div class="background" style="background-image: url(sample.png)">
         <h2 class="title"><span class="title__text">ご利用フロー</span></h2>
-        <div>
-          <ul>
-            <ol>
-              <span>STEP1</span>
-              <p>ヒアリング</p>
-              <p>
+        <div class="card">
+          <ul class="section6__list">
+            <ol class="section6__listItem">
+              <p><span class="badge">STEP1</span></p>
+              <p class="section6__listTitle">ヒアリング</p>
+              <p class="summary small">
                 ご登録後、弊社コンサルタントが<br />ご経歴/ご希望条件等のヒアリングをおこないます。
               </p>
             </ol>
 
-            <ol>
-              <span>STEP2</span>
-              <p>プロジェクトのご紹介</p>
-              <p>
+            <ol class="section6__listItem">
+              <p><span class="badge">STEP2</span></p>
+              <p class="section6__listTitle">プロジェクトのご紹介</p>
+              <p class="summary small">
                 ヒヤリングした内容をもとに、<br />100件以上のプロジェクトの中から<br />ご希望にあったプロジェクトをご紹介いたします。
+              </p>
+            </ol>
+
+            <ol class="section6__listItem">
+              <p><span class="badge">STEP3</span></p>
+              <p class="section6__listTitle">クライアント面談</p>
+              <p class="summary small">
+                ご契約前に、クライアントとプロジェクトの<br />目的/業務内容等のすり合わせをおこないます。
+              </p>
+            </ol>
+
+            <ol class="section6__listItem">
+              <p><span class="badge">STEP4</span></p>
+              <p class="section6__listTitle">プロジェクト開始</p>
+              <p class="summary small">
+                ご契約後、プロジェクトに参画いただきます。<br />参画中は弊社コンサルタントがフォローアップいたします。
+              </p>
+            </ol>
+
+            <ol class="section6__listItem">
+              <p><span class="badge">STEP5</span></p>
+              <p class="section6__listTitle">
+                プロジェクト終了/次のプロジェクトへ
+              </p>
+              <p class="summary small">
+                プロジェクト終了後、ご希望条件をもとに<br />次のプロジェクトをご紹介いたします。
               </p>
             </ol>
           </ul>
         </div>
-        　
       </div>
     </section>
 
@@ -229,7 +253,9 @@
       </p>
 
       <ul>
-        <li><a href="#dummy">運営会社</a></li>
+        <li>
+          <a href="#dummy">運営会社<i class="icon icon--window"></i></a>
+        </li>
         <li><a href="#dummy">利用規約</a></li>
         <li><a href="#dummy">プライバシーポリシー</a></li>
       </ul>
@@ -241,6 +267,7 @@
       src="https://code.jquery.com/jquery-3.5.1.min.js"
     ></script>
     <!-- <script src="parlx.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>
