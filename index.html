@@ -56,7 +56,7 @@
     </nav>
 
     <!-- section1 -->
-    <section id="section1" class="section1 parallax">
+    <section id="section1" class="section parallax">
       <div class="background" style="background-image: url(images/top.jpg)">
         <h2 class="catchCopy">
           <span class="catchCopy__text">
@@ -85,7 +85,11 @@
     </section>
 
     <!-- section2 -->
-    <section id="section2" class="parallax">
+    <section
+      id="section2"
+      class="section parallax"
+      data-ward="What is a professional"
+    >
       <div class="background" style="background-image: url(sample.png)">
         <h2 class="title"><span class="title__text">Proとは</span></h2>
         <p class="section2__role">
@@ -98,7 +102,11 @@
     </section>
 
     <!-- section3 -->
-    <section id="section3" class="parallax">
+    <section
+      id="section3"
+      class="section parallax"
+      data-ward="To Professionals"
+    >
       <div class="background" style="background-image: url(sample.png)">
         <h2 class="title"><span class="title__text">プロの皆様へ</span></h2>
 
@@ -118,13 +126,13 @@
           </ul>
         </div>
         <div class="section3__teamImage">
-          <img src="./images/section3.jpg" alt="xxの画像" />
+          <img src="./images/section3.jpg" alt="xxの画像" loading="lazy" />
         </div>
       </div>
     </section>
 
     <!-- section4 -->
-    <section id="section4" class="parallax">
+    <section id="section4" class="section parallax" data-ward="Strengths">
       <div class="background" style="background-image: url(sample.png)">
         <h2 class="title"><span class="title__text">foRProの魅力</span></h2>
 
@@ -133,7 +141,43 @@
             <span class="title__text">高単価プロジェクト多数</span>
           </h3>
           <!-- グラフ -->
-          <div>graph</div>
+          <div class="section4__imageBox section4__graphBox">
+            <img
+              src="./images/graph.png"
+              alt="高単価プロジェクト多数画像"
+              width="175"
+              height="175"
+              loading="lazy"
+            />
+            <div class="section4__graphBoxList">
+              <ul>
+                <li class="section4__graphBoxListItem small">
+                  <span
+                    class="section4__graphBoxListItemColor section4__graphBoxListItemColor--1"
+                  ></span
+                  >200万円以上
+                </li>
+                <li class="section4__graphBoxListItem small">
+                  <span
+                    class="section4__graphBoxListItemColor section4__graphBoxListItemColor--2"
+                  ></span
+                  >150-200万円
+                </li>
+                <li class="section4__graphBoxListItem small">
+                  <span
+                    class="section4__graphBoxListItemColor section4__graphBoxListItemColor--3"
+                  ></span
+                  >100-150万円
+                </li>
+                <li class="section4__graphBoxListItem small">
+                  <span
+                    class="section4__graphBoxListItemColor section4__graphBoxListItemColor--4"
+                  ></span
+                  >100万円以下
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <div class="card">
@@ -155,6 +199,7 @@
               alt="当月締め当月払いの画像"
               width="136"
               height="136"
+              loading="lazy"
             />
           </div>
           <p class="small section4__imageBoxText">当月締め当月払い</p>
@@ -163,15 +208,20 @@
     </section>
 
     <!-- section5 -->
-    <section id="section5" class="parallax">
-      <div class="background" style="background-image: url(sample.png)">
-        <h2 class="title"><span class="title__text">プロジェクト事例</span></h2>
+    <section id="section5" class="section parallax" data-ward="Case Example">
+      <div
+        class="background"
+        style="background-image: url(./images/section5.png)"
+      >
+        <h2 class="title title--whtie">
+          <span class="title__text">プロジェクト事例</span>
+        </h2>
         <!-- カルーセルのやつ -->
       </div>
     </section>
 
     <!-- section6 -->
-    <section id="section6" class="parallax">
+    <section id="section6" class="section parallax" data-ward="Usage Flow">
       <div class="background" style="background-image: url(sample.png)">
         <h2 class="title"><span class="title__text">ご利用フロー</span></h2>
         <div class="card">
@@ -223,7 +273,11 @@
     </section>
 
     <!-- section7 -->
-    <section id="section7" class="parallax">
+    <section
+      id="section7"
+      class="section parallax"
+      data-ward="Registration Form"
+    >
       <div
         class="background"
         style="background-image: url(./images/section7.jpg)"
@@ -255,6 +309,7 @@
             alt="forProのロゴ画像"
             width="67"
             height="16"
+            loading="lazy"
           /><span class="hidden">forPro公式ページ</span></a
         >
       </p>

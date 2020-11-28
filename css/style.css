@@ -285,6 +285,19 @@ p {
   background-color: #685b4d;
 }
 
+.section:before {
+  z-index: 5;
+  content: attr(data-ward);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #685b4d;
+  font-family: "DIN Alternate", sans-serif;
+  font-size: 14px;
+  transform: rotate(-90deg);
+  line-height: 1;
+}
+
 /* section1 */
 #section1 {
   position: relative;
@@ -297,7 +310,7 @@ p {
   background-position: right 31% bottom 0;
 }
 
-.section1 .section1__form {
+#section1 .section1__form {
   position: absolute;
   left: 0;
   bottom: 20%;
@@ -342,6 +355,11 @@ p {
   height: 262px;
 }
 
+#section2:before {
+  top: 72px; /* text幅/2 + 8（余白分） */
+  left: -48px; /* -(text幅/2 - text高さ/2 - 8（余白分）) */
+}
+
 #section2 .background {
   background-color: #e7e4e1;
   height: 100%;
@@ -357,6 +375,12 @@ p {
 #section3 {
   height: 503px;
 }
+
+#section3:before {
+  top: 55px; /* text幅/2 + 8（余白分） */
+  left: -31px; /* -(text幅/2 - text高さ/2 - 8（余白分）) */
+}
+
 #section3 .icon {
   margin-right: 8px;
 }
@@ -387,6 +411,11 @@ p {
   height: 1149px;
 }
 
+#section4:before {
+  top: 36px; /* text幅/2 + 8（余白分） */
+  left: -13px; /* -(text幅/2 - text高さ/2 - 8（余白分）) */
+}
+
 #section4 .background {
   background-color: #e7e4e1;
 }
@@ -397,14 +426,72 @@ p {
   text-align: center;
 }
 
+#section4 .section4__graphBox {
+  position: relative;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 62px;
+}
+
 #section4 .section4__imageBoxText {
   text-align: center;
+}
+
+#section4 .section4__graphBoxList {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#section4 .section4__graphBoxListItem {
+  line-height: 1;
+  margin-bottom: 12px;
+}
+#section4 .section4__graphBoxListItem:last-child {
+  margin-bottom: 0;
+}
+
+#section4 .section4__graphBoxListItemColor {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  margin-right: 4px;
+}
+
+#section4 .section4__graphBoxListItemColor.section4__graphBoxListItemColor--1 {
+  background-color: #685b4d;
+}
+
+#section4 .section4__graphBoxListItemColor.section4__graphBoxListItemColor--2 {
+  background-color: #958c82;
+}
+
+#section4 .section4__graphBoxListItemColor.section4__graphBoxListItemColor--3 {
+  background-color: #c2bdb7;
+}
+
+#section4 .section4__graphBoxListItemColor.section4__graphBoxListItemColor--4 {
+  background-color: #e1dedb;
+}
+
+/* section5 */
+#section5:before {
+  top: 33px; /* text幅/2 + 8（余白分） */
+  left: -26px; /* -(text幅/2 - text高さ/2 - 8（余白分）) */
+  color: #fff;
 }
 
 /* section6 */
 #section6 {
   height: 805px;
 }
+
+#section6:before {
+  top: 42px; /* text幅/2 + 8（余白分） */
+  left: -19px; /* -(text幅/2 - text高さ/2 - 8（余白分）) */
+}
+
 #section6 .background {
   background-color: #e7e4e1;
 }
@@ -449,6 +536,13 @@ p {
   height: auto;
   min-height: 235px;
 }
+
+#section7:before {
+  top: 60px; /* text幅/2 + 8（余白分） */
+  left: -37px; /* -(text幅/2 - text高さ/2 - 8（余白分）) */
+  color: #fff;
+}
+
 #section7 .applicationForm {
   margin-bottom: 64px;
 }
