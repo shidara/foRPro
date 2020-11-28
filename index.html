@@ -88,7 +88,7 @@
     <section id="section2" class="parallax">
       <div class="background" style="background-image: url(sample.png)">
         <h2 class="title"><span class="title__text">Proとは</span></h2>
-        <p class="section2__rorle">
+        <p class="section2__role">
           コンサルタント(ストラテジー/プロセス/IT)<br />
           CxO・新規事業開発/企画<br />
           営業・人事・経理/財務/ファイナンス<br />
@@ -149,8 +149,15 @@
             <span class="title__text">支払いサイト0日</span>
           </h3>
           <!-- 画像1枚 -->
-          <div>画像1枚</div>
-          <p>当月締め当月払い</p>
+          <div class="section4__imageBox">
+            <img
+              src="./images/money.png"
+              alt="当月締め当月払いの画像"
+              width="136"
+              height="136"
+            />
+          </div>
+          <p class="small section4__imageBoxText">当月締め当月払い</p>
         </div>
       </div>
     </section>
@@ -241,10 +248,10 @@
     </section>
 
     <footer class="footer">
-      <p>
+      <p class="footer__officialLink">
         <a href="#dummy"
           ><img
-            src="./images/logo.png"
+            src="./images/logoWhite.png"
             alt="forProのロゴ画像"
             width="67"
             height="16"
@@ -252,12 +259,14 @@
         >
       </p>
 
-      <ul>
-        <li>
+      <ul class="footer__link">
+        <li class="footer__linkItem">
           <a href="#dummy">運営会社<i class="icon icon--window"></i></a>
         </li>
-        <li><a href="#dummy">利用規約</a></li>
-        <li><a href="#dummy">プライバシーポリシー</a></li>
+        <li class="footer__linkItem"><a href="#dummy">利用規約</a></li>
+        <li class="footer__linkItem">
+          <a href="#dummy">プライバシーポリシー</a>
+        </li>
       </ul>
 
       <small>Copyright ©foRPro. All Rights Reserved</small>

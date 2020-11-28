@@ -306,13 +306,15 @@ p {
 
 #section1 .catchCopy {
   position: absolute;
-  top: 14%;
+  top: 12%;
   left: 0;
   display: flex;
   align-items: center;
   flex-direction: column;
-
   width: 100%;
+  font-size: 40px;
+  line-height: 1.4;
+  font-weight: normal;
 }
 
 #section1 .catchCopy__text {
@@ -329,7 +331,7 @@ p {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -24px;
   height: 1px;
   width: 100%;
   background-color: #685b4d;
@@ -345,11 +347,16 @@ p {
   height: 100%;
 }
 
-#section2 .section2__rorle {
+#section2 .section2__role {
   text-align: center;
+  line-height: 2.1;
+  font-size: 13px;
 }
 
 /* section3 */
+#section3 {
+  height: 503px;
+}
 #section3 .icon {
   margin-right: 8px;
 }
@@ -379,8 +386,19 @@ p {
 #section4 {
   height: 1149px;
 }
+
 #section4 .background {
   background-color: #e7e4e1;
+}
+
+#section4 .section4__imageBox {
+  margin-bottom: 54px;
+  padding-top: 25px;
+  text-align: center;
+}
+
+#section4 .section4__imageBoxText {
+  text-align: center;
 }
 
 /* section6 */
@@ -449,6 +467,19 @@ p {
   color: #8a8988;
 }
 
+.footer .footer__officialLink,
+.footer .footer__link {
+  margin-bottom: 28px;
+}
+
+.footer .footer__officialLink img {
+  margin-left: 8px;
+}
+
+.footer .footer__linkItem a {
+  display: block;
+  padding: 12px 0;
+}
 /* ------------------------- parallax */
 .parallax {
   position: relative;
