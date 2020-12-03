@@ -38,56 +38,12 @@ p {
 }
 
 /* util系 */
-.icon {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  background-repeat: no-repeat;
-  vertical-align: middle;
-}
-
 .summary {
   line-height: 1.4;
 }
 
 .small {
   font-size: 12px;
-}
-
-/* アイコン */
-.icon--back {
-  background-image: url("../images/Icon/Back.svg");
-}
-.icon--checkBox_On {
-  background-image: url("../images/Icon/CheckBox_On.svg");
-}
-
-.icon--checkBox_Off {
-  background-image: url("../images/Icon/CheckBox_Off.svg");
-}
-
-.icon--delete {
-  background-image: url("../images/Icon/Delete.svg");
-}
-
-.icon--forward {
-  background-image: url("../images/Icon/Forward.svg");
-}
-
-.icon--menu {
-  background-image: url("../images/Icon/Menu.svg");
-}
-
-.icon--page_Top {
-  background-image: url("../images/Icon/Page_Top.svg");
-}
-
-.icon--time {
-  background-image: url("../images/Icon/Time.svg");
-}
-
-.icon--window {
-  background-image: url("../images/Icon/Window.svg");
 }
 
 /* スクリーンリーダー用不可視テキスト */
@@ -132,6 +88,10 @@ p {
 .header__navigationButton {
   border: 0;
   background-color: #fff;
+}
+
+.header__navigation--pc {
+  display: none;
 }
 
 /* ナビゲ−ション - コンテンツ */
@@ -428,7 +388,7 @@ p {
 
 /* section4 */
 #section4 {
-  height: 1149px;
+  height: 1161px;
 }
 
 #section4:before {
@@ -441,8 +401,8 @@ p {
 }
 
 #section4 .section4__imageBox {
-  margin-bottom: 54px;
-  padding-top: 25px;
+  margin-bottom: 50px;
+  padding-top: 16px;
   text-align: center;
 }
 
@@ -450,11 +410,12 @@ p {
   position: relative;
   margin-bottom: 0;
   padding-top: 0;
-  padding-bottom: 62px;
+  padding-bottom: 60px;
 }
 
 #section4 .section4__imageBoxText {
   text-align: center;
+  margin-bottom: 0;
 }
 
 #section4 .section4__graphBoxList {
@@ -544,10 +505,68 @@ p {
 }
 
 /* section5 */
+#section5 {
+  height: 472px;
+}
+
 #section5:before {
-  top: 33px; /* text幅/2 + 8（余白分） */
+  top: 49px; /* text幅/2 + 8（余白分） */
   left: -26px; /* -(text幅/2 - text高さ/2 - 8（余白分）) */
   color: #fff;
+}
+
+#section5 .section5__carousel {
+  padding: 0 33px 54px;
+}
+
+#section5 .section5__carouselItem {
+  width: 303px;
+  background-color: #fff;
+}
+
+#section5 .section5__carouselTitle {
+  box-sizing: border-box;
+  min-height: 66px;
+  padding: 10px 16px 16px;
+  color: #fff;
+  background-color: #685b4d;
+  line-height: 1.4;
+}
+
+#section5 .section5__carouselTitle h3 {
+  font-weight: normal;
+  margin: 0;
+}
+
+#section5 .section5__carouselContents {
+  padding: 8px 16px 16px;
+}
+#section5 .section5__carouselTable {
+  font-size: 11px;
+}
+
+#section5 .section5__carouselTable th {
+  text-align: left;
+}
+
+#section5 .section5__carouselTable td {
+  padding-left: 16px;
+}
+
+#section5 .section5__carouselTable strong {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#section5 hr {
+  width: 30%;
+  margin: 12px 0;
+  border-color: #685b4d;
+  border-top: 0;
+}
+
+#section5 .section5__summary {
+  font-size: 12px;
 }
 
 /* section6 */
@@ -645,7 +664,7 @@ p {
 /* ------------------------- parallax */
 .parallax {
   position: relative;
-  height: 400px;
+  /* height: 400px; */
   overflow: hidden;
 }
 .background {
@@ -653,4 +672,68 @@ p {
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* ------------------- slick */
+.slick-prev,
+.slick-next {
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.25),
+    0 3px 14px 0 rgba(119, 132, 134, 0.2);
+}
+.slick-prev:before,
+.slick-next:before {
+  display: none;
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-prev {
+  background-image: url("../images/Icon/Back.svg");
+}
+.slick-next:hover,
+.slick-next:focus,
+.slick-next {
+  background-image: url("../images/Icon/Forward.svg");
+}
+.slick-dots li {
+  width: 16px;
+  height: 16px;
+  margin: 0 1px;
+}
+
+.slick-dots li button {
+  width: 16px;
+  height: 16px;
+}
+
+.slick-dots li button:before {
+  content: "";
+  top: 50%;
+  width: 16px;
+  height: 2px;
+  background-color: #fff;
+  opacity: 0.4;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
 }

@@ -1,0 +1,43 @@
+/* アイコン */
+.icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.icon--back {
+  background-image: url("../images/Icon/Back.svg");
+}
+.icon--checkBox_On {
+  background-image: url("../images/Icon/CheckBox_On.svg");
+}
+
+.icon--checkBox_Off {
+  background-image: url("../images/Icon/CheckBox_Off.svg");
+}
+
+.icon--delete {
+  background-image: url("../images/Icon/Delete.svg");
+}
+
+.icon--forward {
+  background-image: url("../images/Icon/Forward.svg");
+}
+
+.icon--menu {
+  background-image: url("../images/Icon/Menu.svg");
+}
+
+.icon--page_Top {
+  background-image: url("../images/Icon/Page_Top.svg");
+}
+
+.icon--time {
+  background-image: url("../images/Icon/Time.svg");
+}
+
+.icon--window {
+  background-image: url("../images/Icon/Window.svg");
+}

@@ -1,0 +1,70 @@
+.header {
+  height: 100px;
+  padding: 36px 24px;
+}
+
+.header__navigation--sp {
+  display: none;
+}
+
+.header__navigation--pc,
+.header__navigation--pc .navigation {
+  display: block;
+}
+
+.header__navigation--pc {
+  display: flex;
+  align-items: center;
+}
+
+.header__navigationList {
+  margin-right: 12px;
+}
+
+.header__navigationListItem {
+  display: inline-block;
+}
+
+.header__navigationListItem a {
+  padding: 12px;
+  color: #00011d;
+}
+
+.header__navigation--pc .applicationForm .applicationForm__button {
+  width: 92px;
+  height: 28px;
+  line-height: 26px;
+}
+.header__navigation--pc .applicationForm__button {
+  font-size: 12px;
+}
+
+#section1 .catchCopy {
+  align-items: flex-start;
+  padding: 0 120px;
+}
+
+#section1 .section1__form {
+  padding: 0 120px;
+}
+
+#section1 .section1__form .applicationForm {
+  align-items: flex-start;
+}
+
+#section3 .section3__column {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+#section3 .section3__teamImage img {
+  max-width: 589px;
+  height: 240px;
+}
+
+#section3 .section3__question {
+  justify-content: center;
+  align-items: flex-start;
+  width: 400px;
+  margin-left: 40px;
+}
