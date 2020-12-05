@@ -408,6 +408,8 @@ p {
 
 #section4 .section4__graphBox {
   position: relative;
+  box-sizing: border-box;
+  min-height: 239px;
   margin-bottom: 0;
   padding-top: 0;
   padding-bottom: 60px;
@@ -458,6 +460,8 @@ p {
 
 #section4 .section4__cardList {
   display: flex;
+  box-sizing: border-box;
+  min-height: 281px;
   margin: 0 -16px;
   padding: 0 5px;
 }
@@ -487,13 +491,13 @@ p {
 
 #section4 .section4__cardItemButton {
   text-align: center;
-  padding: 0 12px;
 }
 
 #section4 .section4__cardItemButton span {
   color: #fff;
   border-radius: 2px;
   padding: 10px 15px;
+  white-space: nowrap;
 }
 
 #section4 .section4__cardItem:first-child .section4__cardItemButton span {
@@ -502,6 +506,11 @@ p {
 
 #section4 .section4__cardItem:last-child .section4__cardItemButton span {
   background-color: #685b4d;
+}
+
+#section4 .section4__moneyBox {
+  box-sizing: border-box;
+  min-height: 152px;
 }
 
 /* section5 */
@@ -571,7 +580,7 @@ p {
 
 /* section6 */
 #section6 {
-  height: 812px;
+  min-height: 812px;
 }
 
 #section6:before {
