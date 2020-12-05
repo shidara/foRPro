@@ -353,7 +353,7 @@ p {
 
 /* section3 */
 #section3 {
-  height: 503px;
+  height: 487px;
 }
 
 #section3:before {
@@ -571,7 +571,7 @@ p {
 
 /* section6 */
 #section6 {
-  height: 805px;
+  height: 812px;
 }
 
 #section6:before {
@@ -628,6 +628,10 @@ p {
   top: 60px; /* text幅/2 + 8（余白分） */
   left: -37px; /* -(text幅/2 - text高さ/2 - 8（余白分）) */
   color: #fff;
+}
+
+#section7 .title {
+  margin-bottom: 74px;
 }
 
 #section7 .applicationForm {
