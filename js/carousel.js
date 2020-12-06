@@ -1,5 +1,5 @@
 (function ($) {
-  $(".slick01").slick({
+  $(".section5__carouselList").slick({
     arrows: true,
     dots: true, //前/次にスライドを切り替える矢印
     slidesToShow: 3, // 表示するスライド数
