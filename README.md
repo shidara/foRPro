@@ -8,7 +8,7 @@
 
 [Web登録画面]()
 
-[LINE登録画面]https://shidara.github.io/foRPro/lineForm.html()
+[LINE登録画面](https://shidara.github.io/foRPro/lineForm.html)
 
 [登録完了](https://shidara.github.io/foRPro/registrationDone.html)
 
