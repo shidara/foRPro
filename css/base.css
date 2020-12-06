@@ -1,0 +1,128 @@
+/**
+ * Headerとナビゲーション、Footerのみ
+ */
+/* ナビゲ−ション */
+/* ナビゲ−ション - Headerのボタン類など */
+.header__navigationButton {
+  border: 0;
+  background-color: #fff;
+}
+
+.header__navigation--pc {
+  display: none;
+}
+
+/* ナビゲ−ション - コンテンツ */
+.navigation {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 21% 0;
+}
+
+.navigation.navigation--show {
+  display: block;
+}
+
+.navigation .navigation__list {
+  padding-left: 48px;
+}
+
+.navigation .navigation__listItem {
+  position: relative;
+  line-height: 1;
+}
+.navigation .navigation__listItem:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -32px;
+  height: 1px;
+  width: 16px;
+  background-color: #685b4d;
+}
+
+.navigation .navigation__listItem a {
+  display: block;
+  color: #00011d;
+  font-size: 24px;
+  padding: 16px 0;
+}
+
+.navigation .applicationForm.applicationForm--navigation {
+  margin-top: 64px;
+}
+
+/* Footer */
+.footer {
+  padding: 53px 40px 40px;
+  background-color: #191715;
+  color: #fff;
+}
+.footer a {
+  color: #fff;
+}
+.footer small a {
+  font-size: 12px;
+  color: #8a8988;
+}
+
+.footer .footer__officialLink,
+.footer .footer__link {
+  margin-bottom: 28px;
+}
+
+.footer .footer__linkItem .icon {
+  margin-left: 8px;
+}
+
+.footer .footer__linkItem a {
+  display: block;
+  padding: 12px 0;
+}
+
+@media only screen and (min-width: 740px) {
+  .header {
+    height: 100px;
+    padding: 36px 24px;
+  }
+
+  .header__navigation--sp {
+    display: none;
+  }
+
+  .header__navigation--pc,
+  .header__navigation--pc .navigation {
+    display: block;
+  }
+
+  .header__navigation--pc {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__navigationList {
+    margin-right: 12px;
+  }
+
+  .header__navigationListItem {
+    display: inline-block;
+  }
+
+  .header__navigationListItem a {
+    padding: 12px;
+    color: #00011d;
+  }
+
+  .header__navigation--pc .applicationForm .applicationForm__button {
+    width: 92px;
+    height: 28px;
+    line-height: 26px;
+  }
+  .header__navigation--pc .applicationForm__button {
+    font-size: 12px;
+  }
+}

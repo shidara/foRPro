@@ -1,0 +1,24 @@
+#privacy {
+  padding: 40px 0;
+  background-color: #e7e4e1;
+}
+
+#privacy:before {
+  top: 48px; /* text幅/2 + 8（余白分） */
+  left: -25px; /* -(text幅/2 - text高さ/2 - 8（余白分）) */
+}
+
+#privacy .privacy__annotation {
+  margin-bottom: 40px;
+}
+
+#privacy .privacy__item:not(:last-child) {
+  margin-bottom: 64px;
+}
+@media only screen and (min-width: 740px) {
+  .card {
+    padding: 40px 64px 32px;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.25),
+      0 3px 14px 0 rgba(119, 132, 134, 0.2);
+  }
+}

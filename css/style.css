@@ -1,267 +1,3 @@
-/* reset */
-body {
-  margin: 0;
-  padding: 0;
-  -webkit-text-size-adjust: 100%; /*disabling user zoom*/
-  color: #00011d;
-  font-size: 14px;
-  font-family: "Hiragino Mincho Pro", Arial, "Hiragino Kaku Gothic ProN",
-    "Hiragino Sans", Meiryo, sans-serif;
-}
-
-a,
-area,
-button,
-input,
-label,
-select,
-summary,
-textarea {
-  touch-action: manipulation;
-}
-
-ul,
-ol,
-ul li,
-ol li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  margin: 0 0 8px 0;
-}
-
-/* util系 */
-.summary {
-  line-height: 1.4;
-}
-
-.small {
-  font-size: 12px;
-}
-
-/* スクリーンリーダー用不可視テキスト */
-.hidden {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0;
-  width: 1px;
-  height: 1px;
-  border: 0;
-  user-select: none;
-  pointer-events: none;
-}
-
-/** body navigation表示している際のスクロール不可style **/
-.body.body--preventScroll {
-  position: fixed;
-  overflow: hidden;
-  overscroll-behavior: none;
-  width: 100%;
-  height: 100%;
-}
-
-/* Header */
-.header {
-  z-index: 10;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 60px;
-  padding: 18px 16px;
-  background-color: #fff;
-  box-sizing: border-box;
-}
-
-/* ナビゲ−ション */
-/* ナビゲ−ション - Headerのボタン類など */
-.header__navigationButton {
-  border: 0;
-  background-color: #fff;
-}
-
-.header__navigation--pc {
-  display: none;
-}
-
-/* ナビゲ−ション - コンテンツ */
-.navigation {
-  display: none;
-  position: fixed;
-  z-index: 100;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  padding: 21% 0;
-}
-
-.navigation.navigation--show {
-  display: block;
-}
-
-.navigation .navigation__list {
-  padding-left: 48px;
-}
-
-.navigation .navigation__listItem {
-  position: relative;
-  line-height: 1;
-}
-.navigation .navigation__listItem:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -32px;
-  height: 1px;
-  width: 16px;
-  background-color: #685b4d;
-}
-
-.navigation .navigation__listItem a {
-  display: block;
-  color: #00011d;
-  font-size: 24px;
-  padding: 16px 0;
-}
-
-.navigation .applicationForm.applicationForm--navigation {
-  margin-top: 64px;
-}
-
-/** webとLINEの遷移ボタン **/
-.applicationForm {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.applicationForm .applicationForm__catchCopy {
-  width: 310px;
-  color: #685b4d;
-}
-
-.applicationForm .applicationForm__contents {
-  display: flex;
-  justify-content: center;
-}
-
-.applicationForm .applicationForm__button {
-  width: 151px;
-  height: 44px;
-  line-height: 44px;
-  text-align: center;
-  border-radius: 2px;
-  box-sizing: border-box;
-}
-
-.applicationForm .applicationForm__button:not(:first-child) {
-  margin-left: 8px;
-}
-
-.applicationForm .applicationForm__web {
-  color: #fff;
-  background-color: #685b4d;
-}
-
-.applicationForm .applicationForm__line {
-  color: #685b4d;
-  background-color: #fff;
-}
-
-.applicationForm .applicationForm__line.applicationForm__line--border {
-  border: 2px solid #685b4d;
-}
-
-.background {
-  padding: 40px 0;
-}
-
-/** 共通タイトルまわり **/
-.title {
-  color: #685b4d;
-  width: 100%;
-  text-align: center;
-  margin: 0 0 56px;
-  font-weight: normal;
-}
-
-.title.title--whtie {
-  color: #fff;
-}
-
-.title.title--level3 {
-  font-weight: normal;
-  text-align: left;
-  color: #00011d;
-  font-size: 20px;
-  margin: 8px 0 24px;
-}
-
-.title__text {
-  position: relative;
-}
-
-.title__text::after {
-  content: "";
-  position: absolute;
-  bottom: -16px;
-  left: 50%;
-  height: 1px;
-  width: 40px;
-  transform: translateX(-50%);
-  background-color: #685b4d;
-}
-
-.title.title--whtie .title__text::after {
-  background-color: #fff;
-}
-
-.title.title--level3 .title__text::after {
-  left: 0;
-  transform: translateX(0);
-}
-
-/* card */
-.card {
-  margin: 0 8px 16px;
-  padding: 16px;
-  border-radius: 2px;
-  background-color: #fff;
-}
-
-/* badge */
-.badge {
-  padding: 4px;
-  border-radius: 2px;
-  color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  background-color: #685b4d;
-}
-
-.section:before {
-  z-index: 5;
-  content: attr(data-ward);
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #685b4d;
-  font-family: "DIN Alternate", sans-serif;
-  font-size: 14px;
-  transform: rotate(-90deg);
-  line-height: 1;
-}
-
 /* section1 */
 #section1 {
   position: relative;
@@ -620,23 +356,32 @@ p {
 }
 
 #section6 .card {
+  position: relative;
   margin-bottom: 32px;
 }
 
 #section6 .section6__list {
   padding: 12px 41px 0;
 }
+
 #section6 .section6__listItem {
   position: relative;
   margin-bottom: 24px;
+  transform: translate(0, 0);
+  transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-#section6 .section6__listItem:before {
+#section6 .section6__listItem:before,
+#section6 .section6__listItem:after {
   content: "";
   position: absolute;
+  display: block;
+  opacity: 1;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+#section6 .section6__listItem:before {
   top: 4px;
   left: -25px;
-  display: block;
   width: 9px;
   height: 9px;
   border-radius: 50%;
@@ -644,14 +389,24 @@ p {
 }
 
 #section6 .section6__listItem:after {
-  content: "";
-  position: absolute;
   top: 21px;
   left: -21px;
-  display: block;
   width: 1px;
   height: calc(100% - 8px);
   background-color: #d8d8d8;
+}
+
+#section6 .section6__listItemBr {
+  display: none;
+}
+
+#section6 .section6__stepCircle {
+  display: none;
+  position: absolute;
+  top: calc(50% - 91px);
+  left: calc(50% - 97px);
+  right: calc(50% - 97px);
+  bottom: calc(50% - 91px);
 }
 
 /* section7 */
@@ -672,34 +427,6 @@ p {
 
 #section7 .applicationForm {
   margin-bottom: 64px;
-}
-
-/* Footer */
-.footer {
-  padding: 53px 40px 40px;
-  background-color: #191715;
-  color: #fff;
-}
-.footer a {
-  color: #fff;
-}
-.footer small a {
-  font-size: 12px;
-  color: #8a8988;
-}
-
-.footer .footer__officialLink,
-.footer .footer__link {
-  margin-bottom: 28px;
-}
-
-.footer .footer__linkItem .icon {
-  margin-left: 8px;
-}
-
-.footer .footer__linkItem a {
-  display: block;
-  padding: 12px 0;
 }
 /* ------------------------- parallax */
 .parallax {

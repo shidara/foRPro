@@ -1,94 +1,14 @@
 /*
  * PC幅のstylesheet
 */
-body {
-  font-size: 16px;
-}
-
-.header {
-  height: 100px;
-  padding: 36px 24px;
-}
-
-.header__navigation--sp {
-  display: none;
-}
-
-.header__navigation--pc,
-.header__navigation--pc .navigation {
-  display: block;
-}
-
-.header__navigation--pc {
-  display: flex;
-  align-items: center;
-}
-
-.header__navigationList {
-  margin-right: 12px;
-}
-
-.header__navigationListItem {
-  display: inline-block;
-}
-
-.header__navigationListItem a {
-  padding: 12px;
-  color: #00011d;
-}
-
-.header__navigation--pc .applicationForm .applicationForm__button {
-  width: 92px;
-  height: 28px;
-  line-height: 26px;
-}
-.header__navigation--pc .applicationForm__button {
-  font-size: 12px;
-}
-
-/* uitl */
-.parallax {
-  height: auto !important;
-}
 .background {
   position: static;
   width: auto;
   padding: 80px 120px;
 }
-
-/** 共通タイトルまわり **/
-.title {
-  font-size: 40px;
-  margin-bottom: 64px;
-}
-
-.title__text::after {
-  bottom: -24px;
-}
-
-.title.title--level3 .title__text::after {
-  bottom: -12px;
-}
-
-.card {
-  border-radius: 10px;
-}
-
-/** webとLINEの遷移ボタン **/
-.applicationForm .applicationForm__catchCopy {
-  width: 328px;
-  margin-bottom: 24px;
-  font-size: 18px;
-}
-
-.applicationForm .applicationForm__button {
-  width: 160px;
-  height: 44px;
-}
-å
 /* #section1 */
 #section1 {
-  height: calc(100% - 100px); /** 画面高さからヘッダー分の高さを引いています */
+  height: calc(100% - 60px); /** 画面高さからヘッダー分の高さを引いています */
   max-height: none;
   min-height: 540px;
 }
@@ -209,6 +129,14 @@ body {
   font-size: 24px;
   font-weight: normal;
 }
+#section4 .section4__cardItemImage {
+  text-align: center;
+}
+
+#section4 .section4__cardItemImage img {
+  height: auto;
+  max-width: 333px;
+}
 
 /* section5 */
 #section5:before {
@@ -229,6 +157,50 @@ body {
 #section6:before {
   top: 50px;
   left: -3px;
+}
+
+@media only screen and (min-width: 1100px) {
+  #section6 {
+    min-height: auto;
+  }
+  #section6 .section6__list {
+    height: 436px;
+    padding: 24px 17px 0;
+  }
+  #section6 .section6__stepCircle {
+    display: block;
+  }
+  #section6 .section6__listItem:before,
+  #section6 .section6__listItem:after {
+    opacity: 0;
+    visibility: hidden;
+  }
+  #section6 .section6__listItem:nth-child(1) {
+    transform: translate(calc(50% - 141px), 8px);
+  }
+
+  #section6 .section6__listItem:nth-child(2) {
+    transform: translate(calc(100% - 278px), 17px);
+  }
+
+  #section6 .section6__listItem:nth-child(3) {
+    transform: translate(calc(100% - 278px), 100%);
+  }
+
+  #section6 .section6__listItem:nth-child(4) {
+    transform: translate(0, calc(100% - 106px));
+  }
+
+  #section6 .section6__listItem:nth-child(5) {
+    transform: translate(0, -318px);
+  }
+
+  #section6 .section6__listItem:nth-child(5) .section6__listTitle {
+    line-height: 1.4;
+  }
+  #section6 .section6__listItemBr {
+    display: block;
+  }
 }
 
 /* section7 */
