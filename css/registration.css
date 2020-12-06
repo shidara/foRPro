@@ -1,0 +1,38 @@
+#registration {
+  padding: 40px 0;
+  background-color: #e7e4e1;
+}
+
+#registration:before {
+  top: 69px;
+  left: -46px;
+}
+
+#registration .title {
+  margin-bottom: 92px;
+}
+
+#registration .card {
+  padding: 40px 16px 32px;
+}
+
+#registration .card p {
+  text-align: center;
+}
+
+#registration p:first-child {
+  margin-bottom: 24px;
+}
+
+/* PC用 */
+@media only screen and (min-width: 740px) {
+  #registration:before {
+    top: 65px;
+    left: -18px;
+  }
+
+  .card {
+    padding: 40px 64px 32px;
+    margin: 0 120px;
+  }
+}
