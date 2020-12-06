@@ -1,0 +1,110 @@
+#lineForm {
+  padding: 40px 0;
+  background-color: #e7e4e1;
+}
+#lineForm:before {
+  top: 60px;
+  left: -37px;
+}
+
+#lineForm .breadcrumb {
+  padding-top: 12px;
+}
+
+#lineForm .card {
+  padding: 80px 40px;
+}
+
+#lineForm .lineForm__image {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+#lineForm .lineForm__imageSP,
+#lineForm .lineForm__buttonWrap {
+  display: inline;
+}
+
+#lineForm .lineForm__imageLogoPC,
+#lineForm .lineForm__imagePC,
+#lineForm .lineForm__pcSummary {
+  display: none;
+}
+
+#lineForm .lineForm__image,
+#lineForm .lineForm__imagePC {
+  text-align: center;
+}
+
+#lineForm .lineForm__button {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  border-radius: 2px;
+  line-height: 40px;
+}
+
+#lineForm .lineForm__button:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+#lineForm .lineForm__button a {
+  color: #fff;
+  font-size: 13px;
+}
+
+#lineForm .lineForm__button--open {
+  background-color: #00b900;
+}
+
+#lineForm .lineForm__button--download {
+  background-color: #00011d;
+}
+
+#lineForm .lineForm__pcSummary p {
+  text-align: center;
+}
+
+#lineForm .lineForm__pcSummary p:first-child {
+  margin-bottom: 12px;
+}
+
+#lineForm .lineForm__pcSummary span {
+  display: inline-block;
+  width: 327px;
+  font-size: 12px;
+  text-align: left;
+}
+
+/* PC用 */
+@media only screen and (min-width: 740px) {
+  #lineForm:before {
+    top: 68px;
+    left: -21px;
+  }
+
+  .card {
+    padding: 40px 64px 32px;
+    margin: 0 120px;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.25),
+      0 3px 14px 0 rgba(119, 132, 134, 0.2);
+  }
+
+  #lineForm .lineForm__image {
+    margin-bottom: 24px;
+  }
+
+  #lineForm .lineForm__imageSP,
+  #lineForm .lineForm__buttonWrap {
+    display: none;
+  }
+
+  #lineForm .lineForm__imageLogoPC {
+    display: inline;
+  }
+
+  #lineForm .lineForm__imagePC,
+  #lineForm .lineForm__pcSummary {
+    display: block;
+  }
+}
