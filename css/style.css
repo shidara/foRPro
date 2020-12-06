@@ -407,6 +407,18 @@ p {
   background-color: #e7e4e1;
 }
 
+#section4 .section4__contents {
+  flex-direction: column;
+}
+
+#section4 .section4__contents--sp {
+  display: flex;
+}
+
+#section4 .section4__contents--pc {
+  display: none;
+}
+
 #section4 .section4__imageBox {
   margin-bottom: 50px;
   padding-top: 16px;
@@ -501,6 +513,7 @@ p {
 }
 
 #section4 .section4__cardItemButton span {
+  display: inline-block;
   color: #fff;
   border-radius: 2px;
   padding: 10px 15px;
@@ -740,6 +753,10 @@ p {
 .slick-next:focus,
 .slick-next {
   background-image: url("../images/Icon/Forward.svg");
+}
+
+.slick-slide {
+  height: auto;
 }
 .slick-dots li {
   width: 16px;
