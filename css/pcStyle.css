@@ -1,3 +1,10 @@
+/*
+ * PC幅のstylesheet
+*/
+body {
+  font-size: 16px;
+}
+
 .header {
   height: 100px;
   padding: 36px 24px;
@@ -39,19 +46,77 @@
   font-size: 12px;
 }
 
+/* uitl */
+.background {
+  position: static;
+  padding: 80px 120px;
+}
+
+/** 共通タイトルまわり **/
+.title {
+  font-size: 40px;
+  margin-bottom: 64px;
+}
+
+/** webとLINEの遷移ボタン **/
+.applicationForm .applicationForm__catchCopy {
+  width: 328px;
+  margin-bottom: 24px;
+  font-size: 18px;
+}
+
+.applicationForm .applicationForm__button {
+  width: 160px;
+  height: 44px;
+}
+
+/* #section1 */
+#section1 {
+  height: calc(100% - 100px); /** 画面高さからヘッダー分の高さを引いています */
+  max-height: none;
+}
+#section1 .background {
+  margin: 0;
+}
+
+#section1 .section1__catchCopy,
+#section1 .section1__form--sp {
+  display: none;
+}
+
+#section1 .section1CatchCopyPC {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100% - 160px);
+}
+
 #section1 .catchCopy {
+  position: static;
   align-items: flex-start;
-  padding: 0 120px;
+  /* padding: 0 120px; */
+  font-size: 40px;
 }
 
 #section1 .section1__form {
-  padding: 0 120px;
+  position: static;
+  /* padding: 0 120px; */
 }
 
 #section1 .section1__form .applicationForm {
   align-items: flex-start;
 }
 
+/* #section2 */
+#section2 {
+  height: auto;
+}
+
+#section2 .section2__role {
+  font-size: 16px;
+}
+
+/* #section3 */
 #section3 .section3__column {
   display: flex;
   flex-direction: row-reverse;
