@@ -1,27 +1,27 @@
-#privacy {
+#terms {
   padding: 40px 0;
   background-color: #e7e4e1;
 }
-
-#privacy:before {
-  top: 48px; /* text幅/2 + 8（余白分） */
-  left: -25px; /* -(text幅/2 - text高さ/2 - 8（余白分）) */
+#terms:before {
+  top: 57px;
+  left: -34px;
 }
 
-#privacy .privacy__annotation {
+#terms .terms__annotation {
   margin-bottom: 40px;
 }
 
-#privacy .privacy__item:not(:last-child) {
+#terms .terms__item:not(:last-child) {
   margin-bottom: 64px;
 }
 
 /* PC用 */
 @media only screen and (min-width: 740px) {
-  #privacy:before {
-    top: 56px;
-    left: -9px;
+  #terms:before {
+    top: 65px;
+    left: -18px;
   }
+
   .card {
     padding: 40px 64px 32px;
     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.25),
