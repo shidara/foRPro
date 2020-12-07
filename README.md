@@ -6,7 +6,7 @@
 
 [TOP](https://shidara.github.io/foRPro/)
 
-[Web登録画面]()
+[Web登録画面](https://shidara.github.io/foRPro/registration.html)
 
 [LINE登録画面](https://shidara.github.io/foRPro/lineForm.html)
 
