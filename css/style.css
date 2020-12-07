@@ -11,6 +11,7 @@
   left: -5px;
   color: #fff;
   font-size: 12px;
+  animation: scrollAnimationBefore 1s ease-in infinite;
 }
 
 #section1:after {
@@ -23,6 +24,31 @@
   height: 32px;
   line-height: 1;
   background-color: #685b4d;
+  animation: scrollAnimationAfter 1s ease-in infinite;
+}
+
+@keyframes scrollAnimationBefore {
+  0% {
+    bottom: 60px;
+  }
+  50% {
+    bottom: 76px;
+  }
+  100% {
+    bottom: 60px;
+  }
+}
+
+@keyframes scrollAnimationAfter {
+  0% {
+    bottom: 5px;
+  }
+  50% {
+    bottom: 21px;
+  }
+  100% {
+    bottom: 5px;
+  }
 }
 
 #section1 .background {
@@ -58,6 +84,7 @@
   display: block;
   width: 310px;
   color: #685b4d;
+  opacity: 0;
 }
 
 #section1 .catchCopy .catchCopy__underline {
