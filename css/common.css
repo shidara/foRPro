@@ -266,6 +266,10 @@ p {
     height: 44px;
   }
 
+  .applicationForm .applicationForm__line.applicationForm__line--border {
+    border-width: 1px;
+  }
+
   .breadcrumb {
     margin: 0 120px 16px;
   }
