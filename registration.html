@@ -66,7 +66,102 @@
       <div class="card">
         <form class="form">
           <div class="form__item">
-            <label> </label>
+            <label>
+              <span class="form__label"
+                >名前<span class="form__required">必須</span></span
+              >
+              <div class="form__input">
+                <input
+                  type="text"
+                  name="family-name"
+                  autocomplete="name"
+                  placeholder="姓"
+                />
+              </div>
+              <div class="form__input">
+                <input
+                  type="text"
+                  name="given-name"
+                  autocomplete="name"
+                  placeholder="名"
+                />
+              </div>
+            </label>
+          </div>
+
+          <div class="form__item">
+            <label>
+              <span class="form__label"
+                >名前(カナ)<span class="form__required">必須</span></span
+              >
+              <div class="form__input">
+                <input
+                  type="text"
+                  name="family-name-kana"
+                  autocomplete="name"
+                  placeholder="セイ"
+                />
+              </div>
+              <div class="form__input">
+                <input
+                  type="text"
+                  name="given-name-kana"
+                  autocomplete="name"
+                  placeholder="メイ"
+                />
+              </div>
+            </label>
+          </div>
+
+          <div class="form__item">
+            <label>
+              <span class="form__label"
+                >メールアドレス<span class="form__required">必須</span></span
+              >
+              <div class="form__input">
+                <input
+                  type="email"
+                  name="email"
+                  autocomplete="email"
+                  placeholder="mail@example.com"
+                />
+              </div>
+            </label>
+          </div>
+
+          <div class="form__item">
+            <label>
+              <span class="form__label"
+                >電話番号<span class="form__required">必須</span></span
+              >
+              <div class="form__input">
+                <input
+                  type="tel"
+                  name="tel"
+                  autocomplete="tel"
+                  placeholder="09012345678"
+                />
+              </div>
+            </label>
+          </div>
+
+          <div class="form__item">
+            <div class="form__checkboxWrap">
+              <div class="form__checkbox">
+                <input type="checkbox" name="checkbox" />
+              </div>
+              <p class="form__summary">
+                私はfoRProの<a href="./terms.html">利用規約</a
+                >に同意します。foRProがお客様の個人情報をどのように収集、利用、共有しているかについての詳細は<a
+                  href="./privacy.html"
+                  >プライバシーポリシー</a
+                >をご覧ください。
+              </p>
+            </div>
+          </div>
+
+          <div class="form__item form__item--submit">
+            <button type="submit" class="form__submit">会員登録（無料）</button>
           </div>
         </form>
       </div>
