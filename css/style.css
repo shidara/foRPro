@@ -452,6 +452,10 @@
   color: #fff;
 }
 
+#section7 .background {
+  background-position: center;
+}
+
 #section7 .title {
   margin-bottom: 74px;
 }
