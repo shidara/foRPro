@@ -250,6 +250,7 @@ form {
   margin-bottom: 12px;
   font-weight: bold;
   font-size: 14px;
+  vertical-align: baseline;
 }
 .form .form__required {
   color: #fb6a6a;
@@ -315,11 +316,9 @@ form {
     font-size: 40px;
     margin-bottom: 64px;
   }
-
   .title__text::after {
     bottom: -24px;
   }
-
   .title.title--level3 .title__text::after {
     bottom: -12px;
   }
@@ -334,17 +333,46 @@ form {
     margin-bottom: 24px;
     font-size: 18px;
   }
-
   .applicationForm .applicationForm__button {
     width: 160px;
     height: 44px;
   }
-
   .applicationForm .applicationForm__line.applicationForm__line--border {
     border-width: 1px;
   }
 
   .breadcrumb {
     margin: 0 120px 16px;
+  }
+
+  .form label {
+    flex-direction: row;
+  }
+  .form label .form__label,
+  .form label .form__input {
+    box-sizing: border-box;
+    width: 215px;
+  }
+  .form .form__label {
+    position: relative;
+    padding-right: 12px;
+    line-height: 30px;
+  }
+  .form .form__required {
+    position: absolute;
+    top: 0;
+    right: 12px;
+  }
+  .form .form__input:not(:last-child) {
+    margin-right: 16px;
+  }
+  .form .form__checkboxWrap {
+    margin-top: 45px;
+  }
+  .form .form__submit {
+    width: 232px;
+  }
+  .form .form__checkbox input {
+    border-width: 2px;
   }
 }
