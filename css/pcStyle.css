@@ -150,7 +150,8 @@
   padding-bottom: 0;
 }
 
-#section5 .section5__carouselItem {
+#section5 .section5__carouselTitle {
+  min-height: 104px;
 }
 
 /* section6 */

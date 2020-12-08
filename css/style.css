@@ -325,18 +325,16 @@
 
 #section5 .section5__carouselTitle {
   box-sizing: border-box;
-  min-height: 66px;
+  min-height: 70px;
   padding: 10px 16px 16px;
   color: #fff;
   background-color: #685b4d;
   line-height: 1.4;
 }
-
 #section5 .section5__carouselTitle h3 {
   font-weight: normal;
   margin: 0;
 }
-
 #section5 .section5__carouselContents {
   padding: 8px 16px 16px;
 }
@@ -366,6 +364,7 @@
 
 #section5 .section5__summary {
   font-size: 12px;
+  min-height: 108px;
 }
 
 /* section6 */
