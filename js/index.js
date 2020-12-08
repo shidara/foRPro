@@ -11,11 +11,7 @@
   // メニューボタンを押した際の挙動
   $("#header__navigationButton").click(function () {
     $(".navigation").toggleClass("navigation--show");
-    setTimeout(() => {
-      $(".navigation .navigation__listItem").toggleClass(
-        "navigation__listItem--animation"
-      );
-    }, 100);
+    $(".hamburgerMenu").toggleClass("hamburgerMenu--close");
     $(".body").toggleClass("body--preventScroll");
     // 上記だとスクロール位置が失われるので対策必要
   });
