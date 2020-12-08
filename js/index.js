@@ -12,7 +12,20 @@
   $("#header__navigationButton").click(function () {
     $(".navigation").toggleClass("navigation--show");
     $(".hamburgerMenu").toggleClass("hamburgerMenu--close");
-    $(".body").toggleClass("body--preventScroll");
-    // 上記だとスクロール位置が失われるので対策必要
   });
+
+  // やること
+  function hoge(entries) {
+    if (entries[0].intersectionRatio == 0) {
+      return;
+    } else {
+      console.log("fuga", entries);
+    }
+  }
+
+  var section2 = document.getElementsByClassName("section");
+
+  // 各sectionが表示領域に入ったかチェック
+  var observer = new IntersectionObserver(hoge);
+  observer.observe(section2);
 })(jQuery);

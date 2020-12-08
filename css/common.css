@@ -68,21 +68,6 @@ p {
   height: 100%;
 }
 
-/* Header */
-.header {
-  z-index: 10;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 60px;
-  padding: 18px 16px;
-  background-color: #fff;
-  box-sizing: border-box;
-}
-
 /** webとLINEの遷移ボタン **/
 .applicationForm {
   display: flex;

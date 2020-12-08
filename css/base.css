@@ -3,18 +3,32 @@
  */
 /* ナビゲ−ション */
 /* ナビゲ−ション - Headerのボタン類など */
+/* Header */
+.header {
+  z-index: 1000;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 18px 16px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
 .header__navigationButton {
   border: 0;
   background-color: #fff;
 }
-
 .header__navigation--pc {
   display: none;
 }
-
 /* ナビゲ−ション - コンテンツ */
 .navigation {
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 100;
   width: 100%;
   height: 100%;
