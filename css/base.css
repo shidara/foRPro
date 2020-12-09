@@ -41,11 +41,9 @@
 .navigation.navigation--show {
   transform: translateX(0);
 }
-
 .navigation .navigation__list {
   padding-left: 48px;
 }
-
 .navigation .navigation__listItem {
   position: relative;
   line-height: 1;
@@ -114,21 +112,17 @@
   font-size: 12px;
   color: #8a8988;
 }
-
 .footer .footer__officialLink,
 .footer .footer__link {
   margin-bottom: 28px;
 }
-
 .footer .footer__linkItem .icon {
   margin-left: 8px;
 }
-
 .footer .footer__linkItem a {
   display: block;
   padding: 12px 0;
 }
-
 .footer small {
   opacity: 0.5;
 }
@@ -138,34 +132,27 @@
     height: 100px;
     padding: 36px 24px;
   }
-
   .header__navigation--sp {
     display: none;
   }
-
   .header__navigation--pc,
   .header__navigation--pc .navigation {
     display: block;
   }
-
   .header__navigation--pc {
     display: flex;
     align-items: center;
   }
-
   .header__navigationList {
     margin-right: 12px;
   }
-
   .header__navigationListItem {
     display: inline-block;
   }
-
   .header__navigationListItem a {
     padding: 12px;
     color: #00011d;
   }
-
   .header__navigation--pc .applicationForm .applicationForm__button {
     width: 92px;
     height: 28px;
@@ -174,7 +161,6 @@
   .header__navigation--pc .applicationForm__button {
     font-size: 12px;
   }
-
   .footer .footer__linkItem a {
     font-size: 12px;
   }

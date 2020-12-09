@@ -15,6 +15,10 @@
   margin-bottom: 64px;
 }
 
+#terms .title.title--level3 {
+  font-weight: bold;
+}
+
 /* PC用 */
 @media only screen and (min-width: 740px) {
   #terms:before {

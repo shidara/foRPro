@@ -12,43 +12,40 @@
   max-height: none;
   min-height: 540px;
 }
-
 #section1:before {
   bottom: 71px;
   left: 11px;
 }
-
 #section1:after {
   bottom: 16px;
   left: 31px;
 }
-
 #section1 .background {
   margin: 0;
 }
-
 #section1 .section1__catchCopy,
 #section1 .section1__form--sp {
   display: none;
 }
-
 #section1 .section1CatchCopyPC {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: calc(100% - 160px);
 }
-
 #section1 .catchCopy {
   position: static;
   align-items: flex-start;
   font-size: 40px;
+  line-height: 1.25;
+  margin-bottom: 45px;
 }
-
+#section1 .catchCopy .catchCopy__underline:after {
+  bottom: -20px;
+}
 #section1 .section1__form {
   position: static;
 }
-
 #section1 .section1__form .applicationForm {
   align-items: flex-start;
 }
@@ -57,12 +54,10 @@
 #section2 {
   height: auto;
 }
-
 #section2:before {
   top: 88px; /* text幅/2 + 24（余白分） */
   left: -32px; /* -(text幅/2 - text高さ/2）) */
 }
-
 #section2 .section2__role {
   font-size: 16px;
 }
