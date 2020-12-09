@@ -13,7 +13,6 @@
   font-size: 12px;
   animation: scrollAnimationBefore 1s ease-in infinite;
 }
-
 #section1:after {
   z-index: 5;
   content: "";
@@ -55,18 +54,15 @@
   height: 100%;
   background-position: right 31% bottom 0;
 }
-
 #section1 .section1CatchCopyPC {
   display: none;
 }
-
 #section1 .section1__form {
   position: absolute;
   left: 0;
   bottom: 20%;
   width: 100%;
 }
-
 #section1 .catchCopy {
   position: absolute;
   top: 12%;
@@ -79,18 +75,15 @@
   line-height: 1.4;
   font-weight: normal;
 }
-
 #section1 .catchCopy__text {
   display: block;
   width: 310px;
   color: #685b4d;
   opacity: 0;
 }
-
 #section1 .catchCopy .catchCopy__underline {
   position: relative;
 }
-
 #section1 .catchCopy .catchCopy__underline:after {
   content: "";
   position: absolute;
@@ -308,12 +301,27 @@
 }
 
 #section5 .section5__carousel {
-  padding: 0 33px 54px;
+  padding: 0 0px 54px;
 }
-
+#section5 .section5__carousel .slick-list {
+  padding: 0 33px;
+}
 #section5 .section5__carouselItem {
   width: 253px;
   background-color: #fff;
+}
+#section5 .section5__carouselItem:first-child {
+  margin-left: 33px;
+}
+#section5 .section5__carouselItem:not(:first-child) {
+  margin-left: 12px;
+}
+
+#section5 .slick-next {
+  right: 0;
+}
+#section5 .slick-prev {
+  left: 0;
 }
 
 /* iPhone8以降幅 */
@@ -387,7 +395,7 @@
 }
 
 #section6 .section6__list {
-  padding: 12px 41px 0;
+  padding: 12px 0 0 41px;
 }
 
 #section6 .section6__listItem {

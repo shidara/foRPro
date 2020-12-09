@@ -90,31 +90,29 @@
   top: 44px;
   left: 3px;
 }
-
 #section4 .section4__contents--pc {
   display: flex;
 }
-
 #section4 .section4__contents--sp {
   display: none;
 }
 #section4 .section4__contents {
   flex-direction: row;
 }
-
 #section4 .card {
   width: 100%;
 }
-
 #section4 .section4__cardList {
   padding: 4px 16px 18px;
 }
 #section4 .section4__cardItem {
   border-radius: 13px;
 }
-
 #section4 .section4__cardItem:last-child {
   margin-left: 18px;
+}
+#section4 .section4__cardItemTitle {
+  font-weight: bold;
 }
 #section4 .section4__cardItemButton span {
   display: inline-block;
