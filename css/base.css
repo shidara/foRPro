@@ -57,7 +57,7 @@
   width: 16px;
   background-color: #685b4d;
 }
-.navigation .navigation__listItem a {
+.navigation .navigation__listItem .navigation__listItemButton {
   display: block;
   color: #00011d;
   font-size: 24px;
@@ -149,9 +149,10 @@
   .header__navigationListItem {
     display: inline-block;
   }
-  .header__navigationListItem a {
+  .header__navigationListItem .navigation__listItemButton {
     padding: 12px;
     color: #00011d;
+    cursor: pointer;
   }
   .header__navigation--pc .applicationForm .applicationForm__button {
     width: 92px;

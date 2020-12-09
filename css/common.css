@@ -288,6 +288,46 @@ form {
   background-color: #685b4d;
 }
 
+.scrollAnimation {
+  z-index: 5;
+  position: absolute;
+  bottom: 8px;
+  left: 15px;
+  width: 1px;
+  height: 32px;
+  line-height: 1;
+  overflow: hidden;
+}
+.scrollAnimation .scrollAnimation__background {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.4;
+}
+.scrollAnimation .scrollAnimation__main {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: #685b4d;
+  animation: scrollAnimation 1s ease-in infinite;
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateY(-200%);
+  }
+  40% {
+    transform: translateY(-100%);
+  }
+  60% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 @media only screen and (min-width: 740px) {
   body {
     font-size: 16px;
