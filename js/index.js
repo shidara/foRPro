@@ -41,19 +41,25 @@
   });
 
   // Headerのサイズ
-  console.log("ua", device);
   var headerHeight = device === "sp" ? 60 : 100;
+  // sectionのマージン
+  var sectionMargin = device === "sp" ? 40 : 80;
+
   // sectionの位置
+  var section2Pos = $("#section2").offset().top;
   var section3Pos = $("#section3").offset().top;
   var section4Pos = $("#section4").offset().top;
   var section5Pos = $("#section5").offset().top;
   var section6Pos = $("#section6").offset().top;
+  var section7Pos = $("#section7").offset().top;
 
   function sectionPos() {
+    section2Pos = $("#section2").offset().top;
     section3Pos = $("#section3").offset().top;
     section4Pos = $("#section4").offset().top;
     section5Pos = $("#section5").offset().top;
     section6Pos = $("#section6").offset().top;
+    section7Pos = $("#section7").offset().top;
   }
 
   // リサイズされたら位置取り直し
@@ -61,6 +67,7 @@
     sectionPos();
   });
 
+  // ナビゲーション関連
   $(".navigation__listItemButton").click(function () {
     if (device === "sp") {
       $(".navigation").toggleClass("navigation--show");
@@ -82,18 +89,75 @@
     }, 200);
   });
 
-  // やること
-  function hoge(entries) {
-    if (entries[0].intersectionRatio == 0) {
-      return;
-    } else {
-      console.log("fuga", entries);
-    }
-  }
+  // scroll起因のアニメーション
+  /** 間引くかどうか */
+  var wait = false;
+  $(window).scroll(function () {
+    $(".section").each(function () {
+      // scroll位置取得
+      if (!wait) {
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).outerHeight();
 
-  var section2 = document.getElementsByClassName("section");
+        wait = true;
+        setTimeout(() => {
+          wait = false;
+        }, 100);
+      }
 
-  // 各sectionが表示領域に入ったかチェック
-  var observer = new IntersectionObserver(hoge);
-  observer.observe(section2);
+      // 書くsectionでの昨日出し分け
+      if (windowHeight + scroll > section2Pos + sectionMargin) {
+        $("#section2 .title").css({
+          transform: "translateY(0)",
+          opacity: "1",
+        });
+      }
+      if (windowHeight + scroll > section3Pos + sectionMargin) {
+        $("#section3 .title").css({
+          transform: "translateY(0)",
+          opacity: "1",
+        });
+      }
+      if (windowHeight + scroll > section4Pos + sectionMargin) {
+        $("#section4 .title").css({
+          transform: "translateY(0)",
+          opacity: "1",
+        });
+      }
+      if (windowHeight + scroll > section5Pos + sectionMargin) {
+        $("#section5 .title").css({
+          transform: "translateY(0)",
+          opacity: "1",
+        });
+      }
+      if (windowHeight + scroll > section6Pos + sectionMargin) {
+        $("#section6 .title").css({
+          transform: "translateY(0)",
+          opacity: "1",
+        });
+        if (device === "sp") {
+          $("#section6 .section6__listItem").css({
+            transform: "translateY(0)",
+            opacity: "1",
+          });
+        } else {
+          $("#section6 .section6__listItem").css({
+            opacity: "1",
+          });
+        }
+      }
+      if (windowHeight + scroll > section7Pos + sectionMargin) {
+        $("#section7 .title").css({
+          transform: "translateY(0)",
+          opacity: "1",
+        });
+        setTimeout(() => {
+          $("#section7 .applicationForm").css({
+            transform: "translateY(0)",
+            opacity: "1",
+          });
+        }, 700);
+      }
+    });
+  });
 })(jQuery);

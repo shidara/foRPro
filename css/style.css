@@ -51,8 +51,8 @@
   color: #685b4d;
   opacity: 0;
   transform: translateY(100px);
-  transition: transform 700ms cubic-bezier(0.4, 0, 0.2, 1) 500ms,
-    opacity 600ms cubic-bezier(0.4, 0, 0.2, 1) 500ms;
+  transition: transform 900ms cubic-bezier(0.4, 0, 0.2, 1) 500ms,
+    opacity 900ms cubic-bezier(0.4, 0, 0.2, 1) 500ms;
 }
 #section1 .catchCopy .catchCopy__underline {
   position: relative;
@@ -315,8 +315,25 @@
 #section6 .section6__listItem {
   position: relative;
   margin-bottom: 24px;
-  transform: translate(0, 0);
-  transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  transform: translate(0, 100px);
+  transition: transform 1100ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 1100ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+#section6 .section6__listItem:nth-child(1) {
+  transition-delay: 1200ms;
+}
+#section6 .section6__listItem:nth-child(2) {
+  transition-delay: 1600ms;
+}
+#section6 .section6__listItem:nth-child(3) {
+  transition-delay: 2000ms;
+}
+#section6 .section6__listItem:nth-child(4) {
+  transition-delay: 2400ms;
+}
+#section6 .section6__listItem:nth-child(5) {
+  transition-delay: 2800ms;
 }
 #section6 .section6__listItem:before,
 #section6 .section6__listItem:after {
@@ -371,6 +388,10 @@
 }
 #section7 .applicationForm {
   margin-bottom: 64px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: transform 800ms cubic-bezier(0.4, 0, 0.2, 1) 700ms,
+    opacity 800ms cubic-bezier(0.4, 0, 0.2, 1) 700ms;
 }
 
 /* ------------------- slick */

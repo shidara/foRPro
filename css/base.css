@@ -165,4 +165,8 @@
   .footer .footer__linkItem a {
     font-size: 12px;
   }
+
+  .navigation {
+    display: none;
+  }
 }
