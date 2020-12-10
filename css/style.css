@@ -1,8 +1,10 @@
 /* section1 */
 #section1 {
-  position: relative;
+  box-sizing: border-box;
   height: calc(100% - 60px); /** 画面高さからヘッダー分の高さを引いています */
   max-height: 618px;
+  background-image: url("../images/background/1.jpg");
+  background-position: right 31% bottom 0;
 }
 
 #section1:before {
@@ -12,21 +14,24 @@
   color: #fff;
   font-size: 12px;
 }
-#section1 .background {
-  height: 100%;
-  background-position: right 31% bottom 0;
-}
 #section1 .section1CatchCopyPC {
   display: none;
 }
 #section1 .section1__form {
   position: absolute;
   left: 0;
-  bottom: 20%;
+  bottom: 33%;
   width: 100%;
   opacity: 0;
   transform: translateY(100px);
-  transition: transform 800ms ease-in 700ms, opacity 800ms ease-in 700ms;
+  transition: transform 800ms cubic-bezier(0.4, 0, 0.2, 1) 700ms,
+    opacity 800ms cubic-bezier(0.4, 0, 0.2, 1) 700ms;
+}
+/* iPhone8以降 */
+@media only screen and (min-width: 370px) {
+  #section1 .section1__form {
+    bottom: 13%;
+  }
 }
 #section1 .catchCopy {
   position: absolute;
@@ -46,7 +51,8 @@
   color: #685b4d;
   opacity: 0;
   transform: translateY(100px);
-  transition: transform 700ms ease-in 500ms, opacity 600ms ease-in 500ms;
+  transition: transform 700ms cubic-bezier(0.4, 0, 0.2, 1) 500ms,
+    opacity 600ms cubic-bezier(0.4, 0, 0.2, 1) 500ms;
 }
 #section1 .catchCopy .catchCopy__underline {
   position: relative;
@@ -63,18 +69,12 @@
 
 /* section2 */
 #section2 {
-  height: 262px;
+  background-color: #e7e4e1;
 }
-
 #section2:before {
   top: 72px; /* text幅/2 + 8（余白分） */
   left: -48px; /* -(text幅/2 - text高さ/2 - 8（余白分）) */
 }
-
-#section2 .background {
-  background-color: #e7e4e1;
-}
-
 #section2 .section2__role {
   text-align: center;
   line-height: 2.1;
@@ -83,33 +83,27 @@
 
 /* section3 */
 #section3 {
-  height: 487px;
+  background-image: url("../images/background/WhiteTexture.png");
 }
-
 #section3:before {
   top: 55px; /* text幅/2 + 8（余白分） */
   left: -31px; /* -(text幅/2 - text高さ/2 - 8（余白分）) */
 }
-
 #section3 .icon {
   margin-right: 8px;
 }
-
 #section3 .section3__question {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 8px;
 }
-
 #section3 .section3__question li {
   margin-bottom: 8px;
 }
-
 #section3 .section3__teamImage {
-  margin: 0 8px 73px;
+  padding: 0 8px;
 }
-
 #section3 .section3__teamImage img {
   width: 100%;
   height: 190px;
@@ -118,36 +112,26 @@
 
 /* section4 */
 #section4 {
-  height: 1161px;
+  background-color: #e7e4e1;
 }
-
 #section4:before {
   top: 36px; /* text幅/2 + 8（余白分） */
   left: -13px; /* -(text幅/2 - text高さ/2 - 8（余白分）) */
 }
-
-#section4 .background {
-  background-color: #e7e4e1;
-}
-
 #section4 .section4__contents {
   flex-direction: column;
 }
-
 #section4 .section4__contents--sp {
   display: flex;
 }
-
 #section4 .section4__contents--pc {
   display: none;
 }
-
 #section4 .section4__imageBox {
   margin-bottom: 50px;
   padding-top: 16px;
   text-align: center;
 }
-
 #section4 .section4__graphBox {
   position: relative;
   box-sizing: border-box;
@@ -156,18 +140,15 @@
   padding-top: 0;
   padding-bottom: 60px;
 }
-
 #section4 .section4__imageBoxText {
   text-align: center;
   margin-bottom: 0;
 }
-
 #section4 .section4__graphBoxList {
   position: absolute;
   right: 0;
   bottom: 0;
 }
-
 #section4 .section4__graphBoxListItem {
   line-height: 1;
   margin-bottom: 12px;
@@ -175,7 +156,6 @@
 #section4 .section4__graphBoxListItem:last-child {
   margin-bottom: 0;
 }
-
 #section4 .section4__graphBoxListItemColor {
   display: inline-block;
   width: 12px;
@@ -183,23 +163,18 @@
   border-radius: 2px;
   margin-right: 4px;
 }
-
 #section4 .section4__graphBoxListItemColor.section4__graphBoxListItemColor--1 {
   background-color: #685b4d;
 }
-
 #section4 .section4__graphBoxListItemColor.section4__graphBoxListItemColor--2 {
   background-color: #958c82;
 }
-
 #section4 .section4__graphBoxListItemColor.section4__graphBoxListItemColor--3 {
   background-color: #c2bdb7;
 }
-
 #section4 .section4__graphBoxListItemColor.section4__graphBoxListItemColor--4 {
   background-color: #e1dedb;
 }
-
 #section4 .section4__cardList {
   display: flex;
   box-sizing: border-box;
@@ -207,34 +182,28 @@
   margin: 0 -16px;
   padding: 0 5px;
 }
-
 #section4 .section4__cardItem {
   width: 50%;
   box-sizing: border-box;
   border-radius: 8px;
   padding: 16px 4px 22px;
 }
-
 #section4 .section4__cardItem:first-child {
   background-color: #f5f5f5;
 }
-
 #section4 .section4__cardItemTitle {
   text-align: center;
   font-size: 16px;
   margin-bottom: 24px;
 }
-
 #section4 .section4__cardItem img {
   width: 100%;
   height: auto;
   margin-bottom: 12px;
 }
-
 #section4 .section4__cardItemButton {
   text-align: center;
 }
-
 #section4 .section4__cardItemButton span {
   display: inline-block;
   color: #fff;
@@ -242,15 +211,12 @@
   padding: 10px 15px;
   white-space: nowrap;
 }
-
 #section4 .section4__cardItem:first-child .section4__cardItemButton span {
   background-color: #8d8d8d;
 }
-
 #section4 .section4__cardItem:last-child .section4__cardItemButton span {
   background-color: #685b4d;
 }
-
 #section4 .section4__moneyBox {
   box-sizing: border-box;
   min-height: 152px;
@@ -258,17 +224,12 @@
 
 /* section5 */
 #section5 {
-  min-height: 472px;
+  background-image: url("../images/background/3.jpg");
 }
-
 #section5:before {
   top: 49px; /* text幅/2 + 8（余白分） */
   left: -26px; /* -(text幅/2 - text高さ/2 - 8（余白分）) */
   color: #fff;
-}
-
-#section5 .section5__carousel {
-  padding: 0 0px 54px;
 }
 #section5 .section5__carousel .slick-list {
   padding: 0 33px;
@@ -283,7 +244,6 @@
 #section5 .section5__carouselItem:not(:first-child) {
   margin-left: 12px;
 }
-
 #section5 .slick-next {
   right: 0;
 }
@@ -316,27 +276,22 @@
 #section5 .section5__carouselTable {
   font-size: 11px;
 }
-
 #section5 .section5__carouselTable th {
   text-align: left;
 }
-
 #section5 .section5__carouselTable td {
   padding-left: 16px;
 }
-
 #section5 .section5__carouselTable strong {
   font-size: 16px;
   font-weight: bold;
 }
-
 #section5 hr {
   width: 30%;
   margin: 12px 0;
   border-color: #685b4d;
   border-top: 0;
 }
-
 #section5 .section5__summary {
   font-size: 12px;
   min-height: 108px;
@@ -344,34 +299,25 @@
 
 /* section6 */
 #section6 {
-  min-height: 812px;
+  background-color: #e7e4e1;
 }
-
 #section6:before {
   top: 42px; /* text幅/2 + 8（余白分） */
   left: -19px; /* -(text幅/2 - text高さ/2 - 8（余白分）) */
 }
-
-#section6 .background {
-  background-color: #e7e4e1;
-}
-
 #section6 .card {
   position: relative;
   margin-bottom: 32px;
 }
-
 #section6 .section6__list {
   padding: 12px 0 0 41px;
 }
-
 #section6 .section6__listItem {
   position: relative;
   margin-bottom: 24px;
   transform: translate(0, 0);
   transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 #section6 .section6__listItem:before,
 #section6 .section6__listItem:after {
   content: "";
@@ -388,7 +334,6 @@
   border-radius: 50%;
   background-color: #685b4d;
 }
-
 #section6 .section6__listItem:after {
   top: 21px;
   left: -21px;
@@ -396,15 +341,12 @@
   height: calc(100% - 8px);
   background-color: #d8d8d8;
 }
-
 #section6 .section6__listTitle {
   font-size: 16px;
 }
-
 #section6 .section6__listItemBr {
   display: none;
 }
-
 #section6 .section6__stepCircle {
   display: none;
   position: absolute;
@@ -416,38 +358,19 @@
 
 /* section7 */
 #section7 {
-  height: auto;
-  min-height: 235px;
+  background-image: url("../images/background/4.jpg");
+  background-position: center;
 }
-
 #section7:before {
   top: 60px; /* text幅/2 + 8（余白分） */
   left: -37px; /* -(text幅/2 - text高さ/2 - 8（余白分）) */
   color: #fff;
 }
-
-#section7 .background {
-  background-position: center;
-}
-
 #section7 .title {
   margin-bottom: 74px;
 }
-
 #section7 .applicationForm {
   margin-bottom: 64px;
-}
-/* ------------------------- parallax */
-.parallax {
-  position: relative;
-  /* height: 400px; */
-  overflow: hidden;
-}
-.background {
-  position: absolute;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 /* ------------------- slick */

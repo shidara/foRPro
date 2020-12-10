@@ -13,6 +13,7 @@
   } else {
     device = "pc";
   }
+
   // ロード時にキャッチコピーのフェードin
   $("#section1 .catchCopy__text")
     .animate(

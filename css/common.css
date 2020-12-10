@@ -184,6 +184,11 @@ p {
 /** section */
 .section {
   position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 40px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .section:before {
@@ -332,9 +337,10 @@ form {
   body {
     font-size: 16px;
   }
-  /* uitl */
-  .parallax:not(#section1) {
-    height: auto !important;
+
+  .section {
+    width: auto;
+    padding: 80px 120px;
   }
 
   /** 共通タイトルまわり **/
@@ -400,5 +406,8 @@ form {
   }
   .form .form__checkbox input {
     border-width: 2px;
+  }
+  .scrollAnimation {
+    left: 31px;
   }
 }
