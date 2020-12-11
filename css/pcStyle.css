@@ -3,7 +3,7 @@
 */
 /* #section1 */
 #section1 {
-  height: calc(100% - 60px); /** 画面高さからヘッダー分の高さを引いています */
+  height: calc(100% - 100px); /** 画面高さからヘッダー分の高さを引いています */
   max-height: none;
   min-height: 540px;
 }
