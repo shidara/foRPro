@@ -89,6 +89,16 @@
     }, 200);
   });
 
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    console.log("scroll", scroll);
+    if (scroll > 1) {
+      $(".header").addClass("header--shadow");
+    } else {
+      $(".header").removeClass("header--shadow");
+    }
+  });
+
   // scroll起因のアニメーション
   /** 間引くかどうか */
   var wait = false;
@@ -102,7 +112,7 @@
         wait = true;
         setTimeout(() => {
           wait = false;
-        }, 100);
+        }, 50);
       }
 
       // 書くsectionでの昨日出し分け
