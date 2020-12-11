@@ -26,13 +26,18 @@
 
 /* PC用 */
 @media only screen and (min-width: 740px) {
+  .breadcrumb {
+    width: 860px;
+  }
   #registration:before {
     top: 65px;
     left: -18px;
   }
 
   #registration .card {
+    box-sizing: border-box;
+    width: 860px;
     padding: 40px 64px 32px;
-    margin: 0 120px;
+    margin: 0 auto;
   }
 }

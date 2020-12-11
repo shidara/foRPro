@@ -29,16 +29,24 @@
       <nav class="header__navigation header__navigation--pc">
         <ul class="header__navigationList">
           <li class="header__navigationListItem">
-            <a class="navigation__listItemButton" href="./index.html#section3">プロの皆様へ</a>
+            <a class="navigation__listItemButton" href="./index.html#section3"
+              >プロの皆様へ</a
+            >
           </li>
           <li class="header__navigationListItem">
-            <a class="navigation__listItemButton" href="./index.html#section4">foRProの魅力</a>
+            <a class="navigation__listItemButton" href="./index.html#section4"
+              >foRProの魅力</a
+            >
           </li>
           <li class="header__navigationListItem">
-            <a class="navigation__listItemButton" href="./index.html#section5">プロジェクト事例</a>
+            <a class="navigation__listItemButton" href="./index.html#section5"
+              >プロジェクト事例</a
+            >
           </li>
           <li class="header__navigationListItem">
-            <a class="navigation__listItemButton" href="./index.html#section6">ご利用フロー</a>
+            <a class="navigation__listItemButton" href="./index.html#section6"
+              >ご利用フロー</a
+            >
           </li>
         </ul>
 
@@ -91,20 +99,21 @@
           />
         </p>
         <div class="lineForm__buttonWrap">
-          <p class="lineForm__button lineForm__button--open">LINEアプリを開く
+          <p class="lineForm__button lineForm__button--open">
+            LINEアプリを開く
             <!-- data-lineidに友達登録してもらうIDの追加 -->
             <!-- https://social-plugins.line.me/ja/how_to_install#addfriend -->
-            <div
+            <span
               class="line-it-button"
               data-lang="ja"
               data-type="friend"
               data-lineid="@lineteamjp"
               data-count="true"
               data-home="true"
-              style="display: none;"
+              style="display: none"
             >
               LINEアプリを開く
-            </div>
+            </span>
           </p>
           <p class="lineForm__button lineForm__button--download">
             <a href="#dummy">LINEアプリをダウンロード</a>
@@ -149,9 +158,14 @@
       <small>Copyright ©foRPro. All Rights Reserved</small>
     </footer>
     <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+    ></script>
+    <script
       src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js"
       async="async"
       defer="defer"
     ></script>
+    <script type="text/javascript" src="js/headerScroll.js"></script>
   </body>
 </html>

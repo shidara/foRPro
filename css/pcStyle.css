@@ -100,6 +100,7 @@
 }
 #section4 .section4__cardItemTitle {
   font-weight: bold;
+  font-size: 20px;
 }
 #section4 .section4__cardItemButton span {
   display: inline-block;
