@@ -62,6 +62,11 @@
     section7Pos = $("#section7").offset().top;
   }
 
+  // carousel 描画が終わってから再取得
+  setTimeout(() => {
+    sectionPos();
+  }, 50);
+
   // リサイズされたら位置取り直し
   $(window).resize(function () {
     sectionPos();
