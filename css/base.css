@@ -149,7 +149,7 @@
   .header__navigationListItem {
     display: inline-block;
   }
-  .header__navigationListItem .navigation__listItemButton {
+  .header__navigationListItem a {
     padding: 12px;
     color: #00011d;
     cursor: pointer;
