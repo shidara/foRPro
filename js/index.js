@@ -135,7 +135,7 @@
           transform: "translateY(0)",
           opacity: "1",
         });
-        if (device === "sp") {
+        if (device !== "pc") {
           $("#section6 .section6__listItem").css({
             transform: "translateY(0)",
             opacity: "1",
