@@ -61,6 +61,7 @@
 
 #lineForm .lineForm__button--open {
   background-color: #00b900;
+  color: #fff;
 }
 
 #lineForm .lineForm__button--download {
