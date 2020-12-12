@@ -112,6 +112,7 @@
 
       // 書くsectionでの昨日出し分け
       if (windowHeight + scroll > section2Pos + sectionMargin) {
+        $("#section2").addClass("section__show");
         $("#section2 .title").css({
           transform: "translateY(0)",
           opacity: "1",
