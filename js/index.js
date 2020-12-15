@@ -113,30 +113,18 @@
       // 書くsectionでの昨日出し分け
       if (windowHeight + scroll > section2Pos + sectionMargin) {
         $("#section2").addClass("section__show");
-        $("#section2 .title").css({
-          transform: "translateY(0)",
-          opacity: "1",
-        });
       }
       if (windowHeight + scroll > section3Pos + sectionMargin) {
-        $("#section3 .title").css({
-          transform: "translateY(0)",
-          opacity: "1",
-        });
+        $("#section3").addClass("section__show");
       }
       if (windowHeight + scroll > section4Pos + sectionMargin) {
-        $("#section4 .title").css({
-          transform: "translateY(0)",
-          opacity: "1",
-        });
+        $("#section4").addClass("section__show");
       }
       if (windowHeight + scroll > section5Pos + sectionMargin) {
-        $("#section5 .title").css({
-          transform: "translateY(0)",
-          opacity: "1",
-        });
+        $("#section5").addClass("section__show");
       }
       if (windowHeight + scroll > section6Pos + sectionMargin) {
+        $("#section6").addClass("section__show");
         $("#section6 .title").css({
           transform: "translateY(0)",
           opacity: "1",
@@ -153,16 +141,7 @@
         }
       }
       if (windowHeight + scroll > section7Pos + sectionMargin) {
-        $("#section7 .title").css({
-          transform: "translateY(0)",
-          opacity: "1",
-        });
-        setTimeout(() => {
-          $("#section7 .applicationForm").css({
-            transform: "translateY(0)",
-            opacity: "1",
-          });
-        }, 700);
+        $("#section7").addClass("section__show");
       }
     });
   });

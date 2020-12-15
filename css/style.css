@@ -77,8 +77,8 @@
 }
 #section2.section__show .title,
 #section2.section__show .section2__role {
-  transform: translateY(0);
   opacity: 1;
+  transform: translateY(0);
 }
 #section2 .section2__role {
   text-align: center;
@@ -93,6 +93,17 @@
 /* section3 */
 #section3 {
   background-image: url("../images/background/WhiteTexture.png");
+}
+#section3.section__show .title,
+#section3.section__show .section3__column {
+  opacity: 1;
+  transform: translateY(0);
+}
+#section3 .section3__column {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: transform 700ms cubic-bezier(0.4, 0, 0.2, 1) 600ms,
+    opacity 600ms cubic-bezier(0.4, 0, 0.2, 1) 600ms;
 }
 #section3:before {
   top: 55px; /* text幅/2 + 8（余白分） */
@@ -126,6 +137,17 @@
 #section4:before {
   top: 36px; /* text幅/2 + 8（余白分） */
   left: -13px; /* -(text幅/2 - text高さ/2 - 8（余白分）) */
+}
+#section4.section__show .title,
+#section4.section__show .section4__contents {
+  opacity: 1;
+  transform: translateY(0);
+}
+#section4 .section4__contents {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: transform 700ms cubic-bezier(0.4, 0, 0.2, 1) 600ms,
+    opacity 600ms cubic-bezier(0.4, 0, 0.2, 1) 600ms;
 }
 #section4 .section4__contents {
   flex-direction: column;
@@ -239,6 +261,17 @@
   top: 49px; /* text幅/2 + 8（余白分） */
   left: -26px; /* -(text幅/2 - text高さ/2 - 8（余白分）) */
   color: #fff;
+}
+#section5.section__show .title,
+#section5.section__show .section5__carousel {
+  opacity: 1;
+  transform: translateY(0);
+}
+#section5 .section5__carousel {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: transform 700ms cubic-bezier(0.4, 0, 0.2, 1) 600ms,
+    opacity 600ms cubic-bezier(0.4, 0, 0.2, 1) 600ms;
 }
 #section5 .section5__carousel .slick-list {
   padding: 0 33px;
@@ -392,6 +425,11 @@
   left: -37px; /* -(text幅/2 - text高さ/2 - 8（余白分）) */
   color: #fff;
 }
+#section7.section__show .title,
+#section7.section__show .applicationForm {
+  opacity: 1;
+  transform: translateY(0);
+}
 #section7 .title {
   margin-bottom: 74px;
 }
@@ -399,8 +437,8 @@
   margin-bottom: 64px;
   opacity: 0;
   transform: translateY(100px);
-  transition: transform 800ms cubic-bezier(0.4, 0, 0.2, 1) 700ms,
-    opacity 800ms cubic-bezier(0.4, 0, 0.2, 1) 700ms;
+  transition: transform 700ms cubic-bezier(0.4, 0, 0.2, 1) 600ms,
+    opacity 600ms cubic-bezier(0.4, 0, 0.2, 1) 600ms;
 }
 
 /* ------------------- slick */
