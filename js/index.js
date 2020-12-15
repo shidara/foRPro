@@ -125,10 +125,6 @@
       }
       if (windowHeight + scroll > section6Pos + sectionMargin) {
         $("#section6").addClass("section__show");
-        $("#section6 .title").css({
-          transform: "translateY(0)",
-          opacity: "1",
-        });
         if (device !== "pc") {
           $("#section6 .section6__listItem").css({
             transform: "translateY(0)",

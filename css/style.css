@@ -138,16 +138,24 @@
   top: 36px; /* text幅/2 + 8（余白分） */
   left: -13px; /* -(text幅/2 - text高さ/2 - 8（余白分）) */
 }
-#section4.section__show .title,
-#section4.section__show .section4__contents {
+#section4.section__show .title:not(.title--level3),
+#section4.section__show .section4__card--1,
+#section4.section__show .section4__card--2,
+#section4.section__show .section4__card--3 {
   opacity: 1;
   transform: translateY(0);
 }
-#section4 .section4__contents {
+#section4 .section4__card {
   opacity: 0;
   transform: translateY(100px);
   transition: transform 700ms cubic-bezier(0.4, 0, 0.2, 1) 600ms,
     opacity 600ms cubic-bezier(0.4, 0, 0.2, 1) 600ms;
+}
+#section4 .section4__card.section4__card--2 {
+  transition-delay: 1000ms;
+}
+#section4 .section4__card.section4__card--3 {
+  transition-delay: 1400ms;
 }
 #section4 .section4__contents {
   flex-direction: column;
@@ -347,9 +355,18 @@
   top: 42px; /* text幅/2 + 8（余白分） */
   left: -19px; /* -(text幅/2 - text高さ/2 - 8（余白分）) */
 }
+#section6.section__show .title,
+#section6.section__show .card {
+  opacity: 1;
+  transform: translateY(0);
+}
 #section6 .card {
   position: relative;
   margin-bottom: 32px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: transform 700ms cubic-bezier(0.4, 0, 0.2, 1) 600ms,
+    opacity 600ms cubic-bezier(0.4, 0, 0.2, 1) 600ms;
 }
 #section6 .section6__list {
   padding: 12px 0 0 41px;
