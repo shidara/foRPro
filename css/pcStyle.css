@@ -138,6 +138,12 @@
 #section5 .section5__carousel .slick-list {
   padding: 0;
 }
+#section5 .slick-prev {
+  left: -25px;
+}
+#section5 .slick-next {
+  right: -25px;
+}
 
 /* section6 */
 #section6:before {
