@@ -54,6 +54,10 @@
   transition: transform 900ms cubic-bezier(0.4, 0, 0.2, 1) 500ms,
     opacity 900ms cubic-bezier(0.4, 0, 0.2, 1) 500ms;
 }
+#section1 .catchCopy__text.catchCopy__text--show {
+  opacity: 1;
+  transform: translateY(0);
+}
 #section1 .catchCopy .catchCopy__underline {
   position: relative;
 }
@@ -63,8 +67,15 @@
   left: 0;
   bottom: -24px;
   height: 1px;
-  width: 100%;
+  width: 0%;
+  opacity: 0;
   background-color: #685b4d;
+  transition: width 900ms cubic-bezier(0.4, 0, 0.2, 1) 1300ms,
+    opacity 900ms cubic-bezier(0.4, 0, 0.2, 1) 1300ms;
+}
+#section1 .catchCopy__text.catchCopy__text--show .catchCopy__underline:after {
+  width: 100%;
+  opacity: 1;
 }
 
 /* section2 */
@@ -156,6 +167,12 @@
 }
 #section4 .section4__card.section4__card--3 {
   transition-delay: 1400ms;
+}
+#section4 .section4__card.section4__card--2 .title__text::after {
+  transition-delay: 1800ms;
+}
+#section4 .section4__card.section4__card--3 .title__text::after {
+  transition-delay: 2200ms;
 }
 #section4 .section4__contents {
   flex-direction: column;

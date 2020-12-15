@@ -15,17 +15,7 @@
   }
 
   // ロード時にキャッチコピーのフェードin
-  $("#section1 .catchCopy__text")
-    .animate(
-      {
-        opacity: "1",
-      },
-      "slow",
-      "swing"
-    )
-    .css({
-      transform: "translateY(0)",
-    });
+  $("#section1 .catchCopy__text").addClass("catchCopy__text--show");
 
   setTimeout(() => {
     $("#section1 .section1__form").css({

@@ -158,8 +158,7 @@ p {
 }
 
 .title.title--level3 .title__text::after {
-  left: 0;
-  transform: translateX(0);
+  left: 20px;
 }
 
 /* card */
