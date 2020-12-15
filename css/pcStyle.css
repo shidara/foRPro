@@ -132,8 +132,11 @@
   min-height: 104px;
 }
 #section5 .section5__carousel {
-  width: 1000px;
+  width: 933px;
   margin: 0 auto;
+}
+#section5 .section5__carousel .slick-list {
+  padding: 0;
 }
 
 /* section6 */
