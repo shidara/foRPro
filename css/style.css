@@ -164,6 +164,7 @@
 }
 #section3 .section3__question li {
   margin-bottom: 8px;
+  white-space: nowrap;
 }
 #section3 .section3__teamImage {
   padding: 0 8px;
@@ -231,7 +232,7 @@
 }
 #section4 .section4__imageBoxText {
   text-align: center;
-  margin-bottom: 0;
+  font-size: 16px;
 }
 #section4 .section4__graphBoxList {
   position: absolute;
@@ -290,6 +291,13 @@
   height: auto;
   margin-bottom: 12px;
 }
+#section4 img.section4__cardItemTitleImg {
+  width: auto;
+  height: 18px;
+  margin-right: 6px;
+  margin-bottom: 0;
+  vertical-align: text-bottom;
+}
 #section4 .section4__cardItemButton {
   text-align: center;
 }
@@ -309,6 +317,7 @@
 #section4 .section4__moneyBox {
   box-sizing: border-box;
   min-height: 152px;
+  margin-bottom: 40px;
 }
 
 /* section5 */
