@@ -17,7 +17,8 @@
   left: 31px;
 }
 #section1 .section1__catchCopy,
-#section1 .section1__form--sp {
+#section1 .section1__form--sp,
+#section1 .section1__summary.section1__summary--sp {
   display: none;
 }
 #section1 .section1CatchCopyPC {
@@ -36,6 +37,18 @@
 #section1 .catchCopy .catchCopy__underline:after {
   bottom: -20px;
 }
+#section1 .section1__summary.section1__summary--pc {
+  position: static;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 78px;
+}
+#section1 .section1__summary.section1__summary--pc .small {
+  width: 318px;
+  font-size: 14px;
+  line-height: 1.28;
+}
+
 #section1 .section1__form {
   position: static;
 }
@@ -47,6 +60,9 @@
 #section2:before {
   top: 88px; /* text幅/2 + 24（余白分） */
   left: -32px; /* -(text幅/2 - text高さ/2）) */
+}
+#section2 .section2__subTitle br {
+  display: none;
 }
 #section2 .section2__role {
   font-size: 16px;
