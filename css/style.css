@@ -232,10 +232,10 @@
 #section4 .section4__graphBox {
   position: relative;
   box-sizing: border-box;
-  min-height: 239px;
+  min-height: 230px;
   margin-bottom: 0;
-  padding-top: 0;
-  padding-bottom: 60px;
+  padding: 0 30px 60px;
+  text-align: left;
 }
 #section4 .section4__imageBoxText {
   text-align: center;
@@ -249,6 +249,7 @@
 #section4 .section4__graphBoxListItem {
   line-height: 1;
   margin-bottom: 12px;
+  font-size: 16px;
 }
 #section4 .section4__graphBoxListItem:last-child {
   margin-bottom: 0;
