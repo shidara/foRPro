@@ -4,7 +4,7 @@
 /* #section1 */
 #section1 {
   height: calc(100% - 100px); /** 画面高さからヘッダー分の高さを引いています */
-  max-height: none;
+  /* max-height: none; */
   min-height: 540px;
   background-position: top;
 }
@@ -90,56 +90,6 @@
   align-items: flex-start;
   width: 400px;
   margin-left: 40px;
-}
-
-/* #section4 */
-#section4:before {
-  top: 44px;
-  left: 3px;
-}
-#section4 .section4__contents--pc {
-  display: flex;
-}
-#section4 .section4__contents--sp {
-  display: none;
-}
-#section4 .section4__contents {
-  flex-direction: row;
-}
-#section4 .card {
-  width: 100%;
-}
-#section4 .section4__cardList {
-  padding: 4px 16px 18px;
-}
-#section4 .section4__cardItem {
-  border-radius: 13px;
-}
-#section4 .section4__cardItem:last-child {
-  margin-left: 18px;
-}
-#section4 .section4__cardItemTitle {
-  font-weight: bold;
-  font-size: 20px;
-}
-#section4 img.section4__cardItemTitleImg {
-  vertical-align: baseline;
-}
-#section4 .section4__cardItemButton span {
-  display: inline-block;
-  padding: 8px;
-}
-#section4 .section4__cardItemButton strong {
-  font-size: 24px;
-  font-weight: normal;
-}
-#section4 .section4__cardItemImage {
-  text-align: center;
-}
-
-#section4 .section4__cardItemImage img {
-  height: auto;
-  max-width: 333px;
 }
 
 /* section5 */
