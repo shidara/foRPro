@@ -74,7 +74,7 @@
   color: #685b4d;
 }
 #section1 .section1__summary.section1__summary--sp {
-  display: block;
+  display: flex;
 }
 #section1 .section1__summary .small {
   width: 236px;

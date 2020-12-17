@@ -27,6 +27,9 @@
   justify-content: center;
   height: calc(100% - 160px);
 }
+#section1 .section1CatchCopyPC .section1__catchCopy {
+  display: flex;
+}
 #section1 .catchCopy {
   position: static;
   align-items: flex-start;
