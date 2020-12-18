@@ -67,8 +67,13 @@ p {
 }
 
 .applicationForm .applicationForm__catchCopy {
-  width: 310px;
+  width: 266px;
   color: #685b4d;
+}
+@media only screen and (min-width: 325px) {
+  .applicationForm .applicationForm__catchCopy {
+    width: 310px;
+  }
 }
 
 .applicationForm .applicationForm__contents {
@@ -77,12 +82,18 @@ p {
 }
 
 .applicationForm .applicationForm__button {
-  width: 151px;
+  width: 129px;
   height: 44px;
   line-height: 44px;
   text-align: center;
   border-radius: 2px;
   box-sizing: border-box;
+}
+
+@media only screen and (min-width: 325px) {
+  .applicationForm .applicationForm__button {
+    width: 151px;
+  }
 }
 
 .applicationForm .applicationForm__button:not(:first-child) {
