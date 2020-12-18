@@ -17,6 +17,9 @@
   // ロード時にキャッチコピーのフェードin
   $("#section1 .catchCopy__text").addClass("catchCopy__text--show");
   $("#section1 .section1__summary").addClass("section1__summary--show");
+  if (device === "pc") {
+    $("#section1").addClass("section1--pc");
+  }
 
   setTimeout(() => {
     $("#section1 .section1__form").css({
