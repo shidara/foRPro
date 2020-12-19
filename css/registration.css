@@ -1,4 +1,5 @@
 #registration {
+  min-height: calc(100% - 360px);
   padding: 40px 0;
   background-color: #e7e4e1;
 }
@@ -28,6 +29,9 @@
 @media only screen and (min-width: 890px) {
   .breadcrumb {
     width: 860px;
+  }
+  #registration {
+    min-height: calc(100% - 400px);
   }
   #registration:before {
     top: 65px;
