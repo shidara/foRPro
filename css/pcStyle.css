@@ -28,6 +28,7 @@
   flex-direction: column;
   justify-content: center;
   height: calc(100% - 160px);
+  min-height: 400px;
 }
 #section1 .section1CatchCopyPC .section1__catchCopy {
   display: flex;
@@ -37,6 +38,7 @@
   align-items: flex-start;
   font-size: 40px;
   line-height: 1.25;
+  margin: 0;
   margin-bottom: 45px;
 }
 #section1 .catchCopy .catchCopy__underline:after {

@@ -409,6 +409,7 @@
   #section4 .section4__graphBox {
     padding-bottom: 33px;
     min-height: 195px;
+    text-align: left;
   }
 }
 
