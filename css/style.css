@@ -169,9 +169,15 @@
 #section2 .section2__summary .section2__summary--spText {
   display: block;
   width: 340px;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.7;
   color: #00011d;
+}
+/* iPhone8以降 */
+@media only screen and (min-width: 370px) {
+  #section2 .section2__summary .section2__summary--spText {
+    font-size: 14px;
+  }
 }
 #section2 .section2__summary .section2__summary--pcText {
   display: none;
