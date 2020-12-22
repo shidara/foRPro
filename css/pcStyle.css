@@ -73,6 +73,12 @@
 #section2 .section2__role {
   font-size: 16px;
 }
+#section2 .section2__summary .section2__summary--spText {
+  display: none;
+}
+#section2 .section2__summary .section2__summary--pcText {
+  display: block;
+}
 
 /* #section3 */
 #section3:before {
