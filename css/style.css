@@ -2,6 +2,7 @@
 #section1 {
   box-sizing: border-box;
   height: calc(100% - 60px); /** 画面高さからヘッダー分の高さを引いています */
+  min-height: 540px;
   max-height: 618px;
   background-image: url("../images/background/1.jpg");
   background-position: right 31% bottom 0;
@@ -84,23 +85,23 @@
   display: flex;
 }
 #section1 .section1__summary .small {
-  width: 236px;
-  padding-right: 30px;
-  font-size: 11px;
-  line-height: 1.45;
+  width: 196px;
+  padding-right: 70px;
+  font-size: 13px;
+  line-height: 1.15;
 }
 @media only screen and (min-width: 325px) {
   #section1 .section1__summary .small {
-    width: 236px;
-    padding-right: 74px;
+    width: 226px;
+    padding-right: 84px;
   }
 }
 
 /* iPhone8以降 */
 @media only screen and (min-width: 370px) {
   #section1 .section1__summary .small {
-    width: 236px;
-    padding-right: 74px;
+    width: 232px;
+    padding-right: 78px;
   }
 }
 #section1 .catchCopy .catchCopy__underline {

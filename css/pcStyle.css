@@ -4,7 +4,6 @@
 /* #section1 */
 #section1 {
   height: calc(100% - 100px); /** 画面高さからヘッダー分の高さを引いています */
-  min-height: 540px;
   background-position: top;
 }
 #section1:before {
@@ -50,10 +49,10 @@
   align-items: flex-start;
   margin-bottom: 78px;
 }
-#section1 .section1__summary.section1__summary--pc .small {
-  width: 318px;
-  font-size: 14px;
-  line-height: 1.28;
+#section1 .section1__summary.section1__summary--pc p {
+  width: 428px;
+  font-size: 16px;
+  line-height: 1.25;
 }
 
 #section1 .section1__form {
