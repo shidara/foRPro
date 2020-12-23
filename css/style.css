@@ -87,13 +87,14 @@
 #section1 .section1__summary .small {
   width: 196px;
   padding-right: 70px;
-  font-size: 13px;
+  font-size: 11px;
   line-height: 1.4;
 }
 @media only screen and (min-width: 325px) {
   #section1 .section1__summary .small {
     width: 226px;
     padding-right: 84px;
+    font-size: 13px;
   }
 }
 
