@@ -88,7 +88,7 @@
   width: 196px;
   padding-right: 70px;
   font-size: 13px;
-  line-height: 1.15;
+  line-height: 1.4;
 }
 @media only screen and (min-width: 325px) {
   #section1 .section1__summary .small {
@@ -129,8 +129,8 @@
   background-color: #e7e4e1;
 }
 #section2:before {
-  top: 72px; /* text幅/2 + 8（余白分） */
-  left: -48px; /* -(text幅/2 - text高さ/2 - 8（余白分）) */
+  top: 62px; /* text幅/2 + 8（余白分） */
+  left: -39px; /* -(text幅/2 - text高さ/2 - 8（余白分）) */
 }
 #section2.section__show .title,
 #section2.section__show .section2__summary,

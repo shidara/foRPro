@@ -52,7 +52,7 @@
 #section1 .section1__summary.section1__summary--pc p {
   width: 428px;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 1.4;
 }
 
 #section1 .section1__form {
@@ -64,8 +64,8 @@
 
 /* #section2 */
 #section2:before {
-  top: 88px; /* text幅/2 + 24（余白分） */
-  left: -32px; /* -(text幅/2 - text高さ/2）) */
+  top: 78px; /* text幅/2 + 24（余白分） */
+  left: -22px; /* -(text幅/2 - text高さ/2）) */
 }
 #section2 .section2__subTitle br {
   display: none;
