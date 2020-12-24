@@ -54,19 +54,12 @@
     section5Pos = $("#section5").offset().top;
     section6Pos = $("#section6").offset().top;
     section7Pos = $("#section7").offset().top;
-    console.log("section4Pos", section4Pos);
-    console.log("section5Pos", section5Pos);
-    console.log("section6Pos", section6Pos);
   }
 
   // carousel 描画が終わってから再取得
   setTimeout(() => {
     sectionPos();
   }, 500);
-
-  console.log("section4Pos", section4Pos);
-  console.log("section5Pos", section5Pos);
-  console.log("section6Pos", section6Pos);
 
   // リサイズされたら位置取り直し
   $(window).resize(function () {
