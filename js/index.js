@@ -59,7 +59,7 @@
   // carousel 描画が終わってから再取得
   setTimeout(() => {
     sectionPos();
-  }, 500);
+  }, 800);
 
   // リサイズされたら位置取り直し
   $(window).resize(function () {
