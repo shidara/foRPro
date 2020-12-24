@@ -115,6 +115,7 @@
 }
 #section5 .section5__carousel {
   width: 933px;
+  min-height: 362px;
   margin: 0 auto;
 }
 #section5 .section5__carousel .slick-list {
