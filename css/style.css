@@ -430,6 +430,7 @@
     font-size: 20px;
   }
   #section4 img.section4__cardItemTitleImg {
+    height: 23px;
     vertical-align: baseline;
   }
   #section4 .section4__cardItemButton span {
