@@ -1,3 +1,5 @@
 # OS dependent files
 .DS_Store
 Thumbs.db
+# 個人的なvscode設定など
+.code-workspace

@@ -344,7 +344,7 @@ form {
     transform: translateY(0);
   }
 }
-
+/* PC */
 @media only screen and (min-width: 890px) {
   body {
     font-size: 16px;
@@ -374,12 +374,14 @@ form {
   /** webとLINEの遷移ボタン **/
   .applicationForm .applicationForm__catchCopy {
     width: 328px;
-    margin-bottom: 24px;
+    margin-bottom: 14px;
     font-size: 18px;
+    text-align: left;
   }
   .applicationForm .applicationForm__button {
     width: 160px;
     height: 44px;
+    font-size: 18px;
   }
   .applicationForm .applicationForm__line.applicationForm__line--border {
     border-width: 1px;

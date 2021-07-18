@@ -140,9 +140,11 @@
     height: 100px;
     padding: 36px 24px;
   }
+  /* SP ハンバーガーメニュー */
   .header__navigation--sp {
     display: none;
   }
+  /* PCナビゲーションメニュー */
   .header__navigation--pc,
   .header__navigation--pc .navigation {
     display: block;
@@ -159,16 +161,18 @@
   }
   .header__navigationListItem .navigation__listItemButton {
     padding: 12px;
+    font-size: 18px;
     color: #00011d;
     cursor: pointer;
   }
   .header__navigation--pc .applicationForm .applicationForm__button {
-    width: 92px;
-    height: 28px;
-    line-height: 26px;
+    width: 96px;
+    height: 34px;
+    line-height: 34px;
   }
+  /* Web/LINE登録ボタン */
   .header__navigation--pc .applicationForm__button {
-    font-size: 12px;
+    font-size: 18px;
   }
   .footer .footer__linkItem a {
     font-size: 12px;
