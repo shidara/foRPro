@@ -40,6 +40,10 @@
   margin: 0;
   margin-bottom: 45px;
 }
+#section1 .catchCopy__text {
+  width: 600px;
+  font-size: 50px;
+}
 #section1 .catchCopy .catchCopy__underline:after {
   bottom: -20px;
 }
@@ -159,6 +163,9 @@
 #section5 .section5__carouselTitle {
   min-height: 104px;
 }
+#section5 .section5__carouselTitle h3 {
+  font-size: 18px;
+}
 #section5 .section5__carousel {
   width: 933px;
   min-height: 362px;
@@ -172,6 +179,11 @@
 }
 #section5 .slick-next {
   right: -25px;
+}
+
+#section5 .section5__linlButton {
+  font-weight: bold;
+  font-size: 20px;
 }
 
 /* section6 */

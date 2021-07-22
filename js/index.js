@@ -15,13 +15,14 @@
   }
 
   // ロード時にキャッチコピーのフェードin
-  $("#section1 .catchCopy__text").addClass("catchCopy__text--show");
-  $("#section1 .section1__summary").addClass("section1__summary--show");
+
   if (device === "pc") {
     $("#section1").addClass("section1--pc");
   }
 
   setTimeout(() => {
+    $("#section1 .catchCopy__text").addClass("catchCopy__text--show");
+    $("#section1 .section1__summary").addClass("section1__summary--show");
     $("#section1 .section1__form").css({
       transform: "translateY(0)",
       opacity: "1",
@@ -41,7 +42,7 @@
 
   // sectionの位置
   var section2Pos = $("#section2").offset().top;
-  var section3Pos = $("#section3").offset().top;
+  // var section3Pos = $("#section3").offset().top;
   var section4Pos = $("#section4").offset().top;
   var section5Pos = $("#section5").offset().top;
   var section6Pos = $("#section6").offset().top;
@@ -49,7 +50,7 @@
 
   function sectionPos() {
     section2Pos = $("#section2").offset().top;
-    section3Pos = $("#section3").offset().top;
+    // section3Pos = $("#section3").offset().top;
     section4Pos = $("#section4").offset().top;
     section5Pos = $("#section5").offset().top;
     section6Pos = $("#section6").offset().top;
@@ -76,8 +77,8 @@
     var currentNum = $(this).attr("data-transform");
 
     setTimeout(() => {
-      if (currentNum === "3") {
-        $("html,body").animate({ scrollTop: section3Pos - headerHeight });
+      if (currentNum === "2") {
+        $("html,body").animate({ scrollTop: section2Pos - headerHeight });
       } else if (currentNum === "4") {
         $("html,body").animate({ scrollTop: section4Pos - headerHeight });
       } else if (currentNum === "5") {
@@ -104,13 +105,13 @@
         }, 50);
       }
 
-      // 書くsectionでの昨日出し分け
+      // 各sectionでの機能出し分け
       if (windowHeight + scroll > section2Pos + sectionMargin) {
         $("#section2").addClass("section__show");
       }
-      if (windowHeight + scroll > section3Pos + sectionMargin) {
-        $("#section3").addClass("section__show");
-      }
+      // if (windowHeight + scroll > section3Pos + sectionMargin) {
+      //   $("#section3").addClass("section__show");
+      // }
       if (windowHeight + scroll > section4Pos + sectionMargin) {
         $("#section4").addClass("section__show");
       }
