@@ -448,4 +448,13 @@ form .form__submit {
   .scrollAnimation {
     left: 31px;
   }
+
+  /* バッヂ */
+  .rankBadge {
+    width: 32px;
+    height: 32px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 32px;
+    padding: 0;
 }

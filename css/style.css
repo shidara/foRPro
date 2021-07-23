@@ -295,61 +295,6 @@
 #section4 .section4__graphBoxListItemColor.section4__graphBoxListItemColor--4 {
   background-color: #e1dedb;
 }
-#section4 .section4__cardList {
-  display: flex;
-  box-sizing: border-box;
-  min-height: 281px;
-  margin: 0 -16px;
-  padding: 0 5px;
-}
-#section4 .section4__cardItem {
-  width: 50%;
-  box-sizing: border-box;
-  border-radius: 8px;
-  padding: 16px 4px 22px;
-}
-#section4 .section4__cardItem:first-child {
-  background-color: #f5f5f5;
-}
-#section4 .section4__cardItemTitle {
-  text-align: center;
-  font-size: 16px;
-  margin-bottom: 24px;
-}
-#section4 .section4__cardItem img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 12px;
-}
-#section4 img.section4__cardItemTitleImg {
-  width: auto;
-  height: 18px;
-  margin-right: 6px;
-  margin-bottom: 0;
-  vertical-align: text-bottom;
-}
-#section4 .section4__cardItemButton {
-  text-align: center;
-}
-#section4 .section4__cardItemButton span {
-  display: inline-block;
-  color: #fff;
-  border-radius: 2px;
-  padding: 10px 15px;
-  white-space: nowrap;
-}
-#section4 .section4__cardItem:first-child .section4__cardItemButton span {
-  background-color: #8d8d8d;
-}
-#section4 .section4__cardItem:last-child .section4__cardItemButton span {
-  background-color: #685b4d;
-}
-#section4 .section4__moneyBox {
-  box-sizing: border-box;
-  min-height: 152px;
-  margin-bottom: 40px;
-}
-
 .section4__column {
   display: flex;
   align-items: flex-end;
@@ -371,56 +316,37 @@
   }
   #section4 .section4__contents--pc {
     display: flex;
-    width: 784px;
+    width: 864px;
     margin: 0 auto;
   }
   #section4 .section4__contents--sp {
     display: none;
   }
-  #section4 .section4__contents {
-    flex-direction: row;
-  }
+
   #section4 .card {
     width: 100%;
   }
-  #section4 .section4__cardList {
-    padding: 4px 16px 18px;
+  #section4 .section4__card {
+    margin-bottom: 12px;
   }
-  #section4 .section4__cardItem {
-    border-radius: 13px;
+  #section4 .title--level3 .title__text {
+    font-size: 32px;
   }
-  #section4 .section4__cardItem:last-child {
-    margin-left: 18px;
+  .section4__columnItem--summary {
+    flex-grow: 1;
   }
-  #section4 .section4__cardItemTitle {
-    font-weight: bold;
-    font-size: 20px;
+  .section4__columnItem--graphImage {
+    min-width: 398px;
+    flex-grow: 0;
   }
-  #section4 img.section4__cardItemTitleImg {
-    height: 23px;
-    vertical-align: baseline;
+  #section4 .section4__columnItem .summary {
+    font-size: 18px;
   }
-  #section4 .section4__cardItemButton span {
-    display: inline-block;
-    padding: 8px;
+  #section4 .section4__graphBoxListItem {
+    font-size: 14px;
   }
-  #section4 .section4__cardItemButton strong {
-    font-size: 24px;
-    font-weight: normal;
-  }
-  #section4 .section4__cardItemImage {
-    text-align: center;
-  }
-
-  #section4 .section4__cardItemImage img {
-    height: auto;
-    max-width: 333px;
-  }
-
-  #section4 .section4__graphBox {
-    padding-bottom: 33px;
-    min-height: 195px;
-    text-align: left;
+  .section4__column--wrap {
+    align-items: flex-start;
   }
 }
 
