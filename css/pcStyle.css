@@ -76,6 +76,7 @@
   font-size: 24px;
   font-weight: bold;
   font-family: 'Times New Roman';
+  line-height: 1.3;
 }
 /* 斜め線 */
 #section1 .section1__featuresItem:not(:first-child):not(:only-child) {
@@ -150,6 +151,43 @@
 
 #section4 {
   height: 1086px;
+}
+#section4 .section4__contents--sp {
+  display: none;
+}
+  #section4:before {
+  top: 44px;
+  left: 3px;
+}
+#section4 .section4__contents--pc {
+  display: flex;
+  width: 864px;
+  margin: 0 auto;
+}
+#section4 .card {
+  width: 100%;
+}
+#section4 .section4__card {
+  margin-bottom: 12px;
+}
+#section4 .title--level3 .title__text {
+  font-size: 32px;
+}
+.section4__columnItem--summary {
+  flex-grow: 1;
+}
+.section4__columnItem--graphImage {
+  min-width: 398px;
+  flex-grow: 0;
+}
+#section4 .section4__columnItem .summary {
+  font-size: 18px;
+}
+#section4 .section4__graphBoxListItem {
+  font-size: 14px;
+}
+.section4__column--wrap {
+  align-items: flex-start;
 }
 
 /* section5 */
