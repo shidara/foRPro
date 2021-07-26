@@ -369,6 +369,11 @@
   background-color: #685b4d;
   line-height: 1.4;
 }
+@media only screen and (min-width: 365px) {
+  #section5 .section5__carouselTitle {
+    min-height: 113px;
+  }
+}
 #section5 .section5__carouselTitle h3 {
   font-size: 14px;
   font-weight: normal;
@@ -399,6 +404,7 @@
 }
 @media only screen and (min-width: 365px) {
   #section5 .section5__carouselTable td {
+    max-width: 165px;
     padding-left: 16px;
   }
 }
