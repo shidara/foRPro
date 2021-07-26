@@ -43,6 +43,7 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
+  margin: 0;
   font-size: 40px;
   line-height: 1.4;
   font-weight: normal;
@@ -76,7 +77,7 @@
 #section1 .section1__summary {
   position: absolute;
   left: 0;
-  top: 45%;
+  top: 37%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -86,23 +87,26 @@
 #section1 .section1__summary.section1__summary--sp {
   display: flex;
 }
-#section1 .section1__summary .small {
+#section1 .section1__summaryText {
   width: 196px;
   padding-right: 70px;
-  font-size: 11px;
+  font-size: 14px;
   line-height: 1.4;
 }
 @media only screen and (min-width: 325px) {
-  #section1 .section1__summary .small {
+  #section1 .section1__summaryText {
     width: 226px;
     padding-right: 84px;
-    font-size: 13px;
+    font-size: 16px;
   }
 }
 
 /* iPhone8以降 */
 @media only screen and (min-width: 370px) {
-  #section1 .section1__summary .small {
+  #section1 .section1__summary {
+    top: 39%;
+  }
+  #section1 .section1__summaryText {
     width: 232px;
     padding-right: 78px;
   }
