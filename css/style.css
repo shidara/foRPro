@@ -336,7 +336,9 @@
   padding: 0 33px;
 }
 #section5 .section5__carouselItem {
+  position: relative;
   width: 253px;
+  min-height: 443px;
   background-color: #fff;
 }
 #section5 .section5__carouselItem:first-child {
@@ -381,6 +383,7 @@
   padding: 8px 16px 16px;
 }
 #section5 .section5__carouselTable {
+  width: calc(253px - 16px * 2);
   font-size: 12px;
 }
 #section5 .section5__carouselTable th {
@@ -389,6 +392,9 @@
 }
 #section5 .section5__carouselTable td {
   padding-left: 2px;
+  max-width: 134px;
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 @media only screen and (min-width: 365px) {
@@ -415,7 +421,12 @@
     min-height: 108px;
   }
 }
-
+#section5 .section5__linkItem {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  width: calc(100% - 16px * 2);
+}
 #section5 .section5__linkButton {
   display: block;
   width: 100%;

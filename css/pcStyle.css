@@ -55,7 +55,7 @@
 }
 #section1 .section1__summary.section1__summary--pc p {
   width: 633px;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.4;
 }
 
@@ -210,10 +210,9 @@
   margin: 0 auto;
 }
 #section5 .section5__carouselItem {
-  position: relative;
   display: flex;
   flex-direction: column;
-  height: 435px;
+  min-height: 435px;
 }
 #section5 .section5__carousel .slick-list {
   padding: 0;
@@ -227,14 +226,7 @@
 #section5 .section5__carouselContents {
   flex-grow: 1;
 }
-#section5 .section5__linkItem {
-  position: absolute;
-  bottom: 16px;
-  left: 16px;
-  width: calc(100% - 16px * 2);
-}
 #section5 .section5__linkButton {
-  font-weight: bold;
   font-size: 20px;
 }
 
