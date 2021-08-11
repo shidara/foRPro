@@ -1,0 +1,447 @@
+/* reset */
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%; /*disabling user zoom*/
+  color: #00011d;
+  font-size: 14px;
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN",
+    "Yu Mincho", "MS PMincho", serif;
+}
+
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea {
+  touch-action: manipulation;
+}
+
+ul,
+ol,
+ul li,
+ol li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0 0 8px 0;
+}
+
+/* util系 */
+.summary {
+  line-height: 1.5;
+}
+
+.small {
+  font-size: 12px;
+}
+
+/* スクリーンリーダー用不可視テキスト */
+.hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  user-select: none;
+  pointer-events: none;
+}
+
+/** webとLINEの遷移ボタン **/
+.applicationForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.applicationForm .applicationForm__catchCopy {
+  width: 266px;
+  color: #685b4d;
+  text-align: center;
+}
+@media only screen and (min-width: 325px) {
+  .applicationForm .applicationForm__catchCopy {
+    width: 310px;
+  }
+}
+
+.applicationForm .applicationForm__contents {
+  display: flex;
+  justify-content: center;
+}
+
+.applicationForm .applicationForm__button {
+  width: 129px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 325px) {
+  .applicationForm .applicationForm__button {
+    width: 151px;
+  }
+}
+
+.applicationForm .applicationForm__button:not(:first-child) {
+  margin-left: 8px;
+}
+
+.applicationForm .applicationForm__web {
+  color: #fff;
+  background-color: #685b4d;
+}
+
+.applicationForm .applicationForm__line {
+  color: #685b4d;
+  background-color: #fff;
+}
+
+.applicationForm .applicationForm__line.applicationForm__line--border {
+  border: 2px solid #685b4d;
+}
+
+/** 共通タイトルまわり **/
+.title {
+  color: #685b4d;
+  width: 100%;
+  text-align: center;
+  margin: 0 0 56px;
+  font-weight: normal;
+}
+
+.top .title:not(.title--level3) {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: transform 700ms cubic-bezier(0.4, 0, 0.2, 1) 600ms,
+    opacity 600ms cubic-bezier(0.4, 0, 0.2, 1) 600ms;
+}
+
+.title.title--whtie {
+  color: #fff;
+}
+
+.title.title--level3 {
+  font-weight: normal;
+  text-align: left;
+  color: #00011d;
+  font-size: 20px;
+  margin: 8px 0 24px;
+}
+
+.title__text {
+  position: relative;
+}
+
+.title__text::after {
+  content: "";
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  height: 1px;
+  width: 40px;
+  transform: translateX(-50%);
+  background-color: #685b4d;
+  transition: width 400ms cubic-bezier(0.4, 0, 0.2, 1) 1300ms;
+}
+.top .title__text::after {
+  width: 0;
+}
+.section.section__show .title__text::after {
+  width: 40px;
+}
+
+.title.title--whtie .title__text::after {
+  background-color: #fff;
+}
+
+.title.title--level3 .title__text::after {
+  left: 20px;
+}
+
+/* card */
+.card {
+  margin: 0 8px 16px;
+  padding: 16px;
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0 3px 14px 0 rgba(119, 132, 134, 0.2);
+}
+
+/* badge */
+.badge {
+  padding: 4px;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #685b4d;
+  font-family: "TsukuARdGothic-Regular", sans-serif;
+}
+
+/** section */
+.section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 40px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section:before {
+  z-index: 5;
+  content: attr(data-ward);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #685b4d;
+  font-family: "DIN Alternate", sans-serif;
+  font-size: 14px;
+  transform: rotate(-90deg);
+  line-height: 1;
+}
+
+/* breadcrumb */
+.breadcrumb {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.breadcrumb a {
+  color: #00011d;
+}
+
+/* delimiter */
+.delimiter {
+  margin: 0 4px;
+}
+
+/* form */
+form {
+  margin: 0;
+}
+form .form__item {
+  margin-bottom: 12px;
+}
+form .form__item:last-child {
+  margin-bottom: 0;
+}
+form .form__item.form__item--submit {
+  display: flex;
+  justify-content: center;
+}
+form label {
+  display: flex;
+  flex-direction: column;
+}
+form .form__label {
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 14px;
+  vertical-align: baseline;
+}
+form .form__required {
+  color: #fb6a6a;
+  margin-left: 12px;
+  font-size: 12px;
+  font-weight: normal;
+}
+form .form__input {
+  margin-bottom: 12px;
+}
+form .form__input input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 30px;
+  padding: 8px;
+  border: 0;
+  border-radius: 2px;
+  font-size: 14px;
+  background-color: #f0f0f0;
+}
+form .form__checkboxWrap {
+  display: flex;
+  margin-top: 28px;
+}
+form .form__checkbox {
+  margin-right: 12px;
+}
+form .form__checkbox label{
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  align-items:center;
+  cursor:pointer;
+}
+form .form__checkbox input {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #00011d;
+}
+form .form__summary {
+  font-weight: normal;
+  text-align: left;
+  line-height: 1.4;
+  margin: 15px 0px;
+}
+form .form__summary a {
+  color: #056cd2;
+}
+form .form__submit {
+  width: 80%;
+  height: 44px;
+  border: 0;
+  border-radius: 2px;
+  line-height: 44px;
+  text-align: center;
+  color: #fff;
+  background-color: #cccccc;
+  pointer-events: none;
+}
+
+form .form__submit.active {
+  pointer-events: auto;
+  background-color: #685b4d;
+  opacity:1;
+}
+
+.scrollAnimation {
+  z-index: 5;
+  position: absolute;
+  bottom: 8px;
+  left: 15px;
+  width: 1px;
+  height: 32px;
+  line-height: 1;
+  overflow: hidden;
+}
+.scrollAnimation .scrollAnimation__background {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.4;
+}
+.scrollAnimation .scrollAnimation__main {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: #685b4d;
+  animation: scrollAnimation 1s ease-in infinite;
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateY(-200%);
+  }
+  40% {
+    transform: translateY(-100%);
+  }
+  60% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (min-width: 890px) {
+  body {
+    font-size: 16px;
+  }
+
+  .section {
+    width: auto;
+    padding: 80px 120px;
+  }
+
+  /** 共通タイトルまわり **/
+  .title {
+    font-size: 40px;
+    margin-bottom: 64px;
+  }
+  .title__text::after {
+    bottom: -24px;
+  }
+  .title.title--level3 .title__text::after {
+    bottom: -12px;
+  }
+
+  .card {
+    border-radius: 10px;
+  }
+
+  /** webとLINEの遷移ボタン **/
+  .applicationForm .applicationForm__catchCopy {
+    width: 328px;
+    margin-bottom: 24px;
+    font-size: 18px;
+  }
+  .applicationForm .applicationForm__button {
+    width: 160px;
+    height: 44px;
+  }
+  .applicationForm .applicationForm__line.applicationForm__line--border {
+    border-width: 1px;
+  }
+
+  .breadcrumb {
+    margin: 0 auto 16px;
+  }
+
+  form label {
+    flex-direction: row;
+  }
+  form label .form__label,
+  form label .form__input {
+    box-sizing: border-box;
+    width: 215px;
+  }
+  form .form__label {
+    position: relative;
+    padding-right: 12px;
+    line-height: 30px;
+  }
+  form .form__required {
+    position: absolute;
+    top: 0;
+    right: 12px;
+  }
+  form .form__input:not(:last-child) {
+    margin-right: 16px;
+  }
+  form .form__checkboxWrap {
+    margin-top: 45px;
+  }
+  form .form__submit {
+    width: 232px;
+  }
+  form .form__checkbox label{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:center;
+    cursor:pointer;
+  }
+  form .form__checkbox input {
+    border-width: 2px;
+  }
+  .scrollAnimation {
+    left: 31px;
+  }
+}

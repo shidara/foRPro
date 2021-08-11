@@ -1,0 +1,200 @@
+/*
+ * PC幅のstylesheet
+*/
+/* #section1 */
+#section1 {
+  height: calc(100% - 100px); /** 画面高さからヘッダー分の高さを引いています */
+  background-position: top;
+}
+#section1:before {
+  bottom: 71px;
+  left: 11px;
+}
+#section1:after {
+  bottom: 16px;
+  left: 31px;
+}
+#section1.section1--pc {
+  max-height: none;
+}
+#section1 .section1__catchCopy,
+#section1 .section1__form--sp,
+#section1 .section1__summary.section1__summary--sp {
+  display: none;
+}
+#section1 .section1CatchCopyPC {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100% - 160px);
+  min-height: 400px;
+}
+#section1 .section1CatchCopyPC .section1__catchCopy {
+  display: flex;
+}
+#section1 .catchCopy {
+  position: static;
+  align-items: flex-start;
+  font-size: 40px;
+  line-height: 1.25;
+  margin: 0;
+  margin-bottom: 45px;
+}
+#section1 .catchCopy .catchCopy__underline:after {
+  bottom: -20px;
+}
+#section1 .section1__summary.section1__summary--pc {
+  position: static;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 78px;
+}
+#section1 .section1__summary.section1__summary--pc p {
+  width: 428px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+#section1 .section1__form {
+  position: static;
+}
+#section1 .section1__form .applicationForm {
+  align-items: flex-start;
+}
+
+/* #section2 */
+#section2:before {
+  top: 78px; /* text幅/2 + 24（余白分） */
+  left: -22px; /* -(text幅/2 - text高さ/2）) */
+}
+#section2 .section2__subTitle br {
+  display: none;
+}
+#section2 .section2__subTitle,
+#section2 .section2__role {
+  font-size: 16px;
+}
+#section2 .section2__summary .section2__summary--spText {
+  display: none;
+}
+#section2 .section2__summary .section2__summary--pcText {
+  display: block;
+}
+
+/* #section3 */
+#section3:before {
+  top: 63px;
+  left: -15px;
+}
+#section3 .section3__column {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+#section3 .section3__teamImage img {
+  max-width: 589px;
+  height: 240px;
+}
+#section3 .section3__question {
+  justify-content: center;
+  align-items: flex-start;
+  width: 400px;
+  margin-left: 40px;
+}
+
+#section4 {
+  height: 1207px;
+}
+
+/* section5 */
+#section5 {
+  padding: 80px 0;
+}
+#section5:before {
+  top: 57px;
+  left: -10px;
+}
+#section5 .section5__carouselTitle {
+  min-height: 104px;
+}
+#section5 .section5__carousel {
+  width: 933px;
+  min-height: 362px;
+  margin: 0 auto;
+}
+#section5 .section5__carousel .slick-list {
+  padding: 0;
+}
+#section5 .slick-prev {
+  left: -25px;
+}
+#section5 .slick-next {
+  right: -25px;
+}
+
+/* section6 */
+#section6:before {
+  top: 50px;
+  left: -3px;
+}
+
+#section6 .section6__listItem {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@media only screen and (min-width: 1100px) {
+  #section6 .card {
+    width: 860px;
+    margin: 0 auto;
+  }
+  #section6 .section6__list {
+    height: 436px;
+    padding: 24px 17px 0;
+  }
+  #section6 .section6__stepCircle {
+    display: block;
+  }
+  #section6 .section6__listItem:before,
+  #section6 .section6__listItem:after {
+    opacity: 0;
+    visibility: hidden;
+  }
+  #section6 .section6__listItem:nth-child(1) {
+    transform: translate(calc(50% - 141px), 8px);
+  }
+
+  #section6 .section6__listItem:nth-child(2) {
+    transform: translate(calc(100% - 278px), 17px);
+  }
+
+  #section6 .section6__listItem:nth-child(3) {
+    transform: translate(calc(100% - 278px), 100%);
+  }
+
+  #section6 .section6__listItem:nth-child(4) {
+    transform: translate(0, calc(100% - 106px));
+  }
+
+  #section6 .section6__listItem:nth-child(5) {
+    transform: translate(0, -318px);
+  }
+
+  #section6 .section6__listItem:nth-child(5) .section6__listTitle {
+    line-height: 1.4;
+  }
+  #section6 .section6__listItemBr {
+    display: block;
+  }
+}
+
+/* section7 */
+#section7:before {
+  top: 68px;
+  left: -21px;
+}
+
+/* slick */
+.slick-slide:not(:first-child) {
+  margin-left: 12px;
+}

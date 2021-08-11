@@ -1,0 +1,180 @@
+/**
+ * Headerとナビゲーション、Footerのみ
+ */
+/* ナビゲ−ション */
+/* ナビゲ−ション - Headerのボタン類など */
+/* Header */
+.header {
+  z-index: 1000;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 18px 16px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.header.header--shadow {
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.25),
+    0 3px 14px 0 rgba(119, 132, 134, 0.2);
+}
+.header__navigationButton {
+  border: 0;
+  background-color: #fff;
+}
+.header__navigation--pc {
+  display: none;
+}
+/* ナビゲ−ション - コンテンツ */
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 21% 0;
+  transform: translateX(100%);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation.navigation--show {
+  transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
+}
+.navigation .navigation__list {
+  padding-left: 48px;
+}
+.navigation .navigation__listItem {
+  position: relative;
+  line-height: 1;
+}
+.navigation .navigation__listItem:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -32px;
+  height: 1px;
+  width: 16px;
+  background-color: #685b4d;
+}
+.navigation .navigation__listItem .navigation__listItemButton {
+  display: block;
+  color: #00011d;
+  font-size: 24px;
+  padding: 16px 0;
+}
+.navigation .applicationForm.applicationForm--navigation {
+  margin-top: 64px;
+}
+
+/* hamburgerMenu */
+.hamburgerMenu {
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+  padding: 6px 3px;
+}
+.hamburgerMenu__border {
+  display: block;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0.03s;
+}
+.hamburgerMenu__border:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #3b3239;
+}
+.hamburgerMenu__border:not(:last-child) {
+  margin-bottom: 3px;
+}
+.hamburgerMenu.hamburgerMenu--close .hamburgerMenu__border:nth-child(1) {
+  transform: translate(0, 5px) rotate(45deg);
+}
+.hamburgerMenu.hamburgerMenu--close .hamburgerMenu__border:nth-child(2) {
+  transform: scale(0, 1);
+}
+.hamburgerMenu.hamburgerMenu--close .hamburgerMenu__border:nth-child(3) {
+  transform: translate(0, -5px) rotate(-45deg);
+}
+
+/* Footer */
+.footer {
+  padding: 53px 40px 40px;
+  background-color: #191715;
+  color: #fff;
+}
+.footer a {
+  color: #fff;
+}
+.footer small a {
+  font-size: 12px;
+  color: #8a8988;
+}
+.footer .footer__officialLink,
+.footer .footer__link {
+  margin-bottom: 28px;
+}
+.footer .footer__linkItem .icon {
+  margin-left: 8px;
+}
+.footer .footer__linkItem a {
+  display: block;
+  padding: 12px 0;
+}
+.footer small {
+  opacity: 0.5;
+}
+
+@media only screen and (min-width: 890px) {
+  .header {
+    height: 100px;
+    padding: 36px 24px;
+  }
+  .header__navigation--sp {
+    display: none;
+  }
+  .header__navigation--pc,
+  .header__navigation--pc .navigation {
+    display: block;
+  }
+  .header__navigation--pc {
+    display: flex;
+    align-items: center;
+  }
+  .header__navigationList {
+    margin-right: 12px;
+  }
+  .header__navigationListItem {
+    display: inline-block;
+  }
+  .header__navigationListItem .navigation__listItemButton {
+    padding: 12px;
+    color: #00011d;
+    cursor: pointer;
+  }
+  .header__navigation--pc .applicationForm .applicationForm__button {
+    width: 92px;
+    height: 28px;
+    line-height: 26px;
+  }
+  .header__navigation--pc .applicationForm__button {
+    font-size: 12px;
+  }
+  .footer .footer__linkItem a {
+    font-size: 12px;
+  }
+
+  .navigation {
+    display: none;
+  }
+}
